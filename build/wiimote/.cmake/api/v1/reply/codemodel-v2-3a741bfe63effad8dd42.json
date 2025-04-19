@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cd83112a831dbbd82cb7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "wiimote",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_wiimote::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_wiimote-d9dd70524317158885d9.json",
+					"name" : "teleop_wiimote",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "teleop_wiimote_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-teleop_wiimote_node-2463578fb9062c010b2f.json",
+					"name" : "teleop_wiimote_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-32874b025d55595d7c41.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_lib::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_lib-a46b8014396d8f29aa72.json",
+					"name" : "wiimote_lib",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_node-764d700e430cfed6b491.json",
+					"name" : "wiimote_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wiimote_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wiimote_uninstall-80843fadce71ea29a757.json",
+					"name" : "wiimote_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/bmes-endoscope-25/joystick_ws/build/wiimote",
+		"source" : "/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "wiimote_msgs__py",
+		"source" : "/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs/wiimote_msgs__py"
+	}
+}

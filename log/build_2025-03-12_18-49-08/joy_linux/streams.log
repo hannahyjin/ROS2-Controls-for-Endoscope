@@ -1,0 +1,25 @@
+[0.075s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy_linux -- -j4 -l4
+[0.377s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o[0m
+[39.577s] [100%] [32m[1mLinking CXX executable joy_linux_node[0m
+[41.865s] [100%] Built target joy_linux_node
+[41.933s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy_linux -- -j4 -l4
+[41.983s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy_linux
+[42.032s] -- Install configuration: ""
+[42.033s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/joy_linux/joy_linux_node
+[42.069s] -- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/joy_linux/joy_linux_node" to ""
+[42.070s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/package_run_dependencies/joy_linux
+[42.071s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/parent_prefix_path/joy_linux
+[42.073s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.sh
+[42.074s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.dsv
+[42.075s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/path.sh
+[42.076s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/path.dsv
+[42.077s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.bash
+[42.078s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.sh
+[42.079s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.zsh
+[42.080s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.dsv
+[42.081s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.dsv
+[42.083s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/packages/joy_linux
+[42.084s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig.cmake
+[42.085s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig-version.cmake
+[42.086s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.xml
+[42.094s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy_linux

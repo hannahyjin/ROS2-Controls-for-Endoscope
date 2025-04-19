@@ -1,0 +1,15 @@
+[0.090s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+[0.470s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o[0m
+[12.368s] [01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:[m[K In member function ‘[01m[Kvoid DpadTeleop::[01;32m[Kjoy_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.369s] [01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:27:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<sensor_msgs::msg::Joy_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbutton[m[K’; did you mean ‘[01m[Kbuttons[m[K’?
+[12.370s]    27 |         float lb = msg->[01;31m[Kbutton[m[K[4];
+[12.370s]       |                         [01;31m[K^~~~~~[m[K
+[12.371s]       |                         [32m[Kbuttons[m[K
+[12.371s] [01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<sensor_msgs::msg::Joy_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbutton[m[K’; did you mean ‘[01m[Kbuttons[m[K’?
+[12.372s]    28 |         float rb = msg->[01;31m[Kbutton[m[K[5];
+[12.372s]       |                         [01;31m[K^~~~~~[m[K
+[12.373s]       |                         [32m[Kbuttons[m[K
+[22.957s] gmake[2]: *** [CMakeFiles/controller_dpad.dir/build.make:76: CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o] Error 1
+[22.957s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/controller_dpad.dir/all] Error 2
+[22.958s] gmake: *** [Makefile:146: all] Error 2
+[22.967s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4

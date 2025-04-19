@@ -1,0 +1,48 @@
+[0.075s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote -- -j4 -l4
+[0.551s] [ 22%] Built target wiimote_node
+[0.558s] [ 44%] Built target teleop_wiimote_node
+[0.568s] [ 66%] Built target teleop_wiimote
+[0.581s] [100%] Built target wiimote_lib
+[0.635s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote -- -j4 -l4
+[0.646s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote
+[0.694s] -- Install configuration: ""
+[0.697s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/wiimote_node
+[0.701s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/teleop_wiimote_node
+[0.706s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libwiimote_lib.so
+[0.711s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libteleop_wiimote.so
+[0.713s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote
+[0.714s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote
+[0.715s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/stat_vector_3d.hpp
+[0.716s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/wiimote_controller.hpp
+[0.717s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/teleop_wiimote.hpp
+[0.717s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch
+[0.718s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/turtlesim.launch.py
+[0.719s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/feedback_test.launch.py
+[0.719s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/wiimote_lifecycle.launch.py
+[0.719s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config
+[0.720s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config/wiimote_params.yaml
+[0.721s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config/teleop_wiimote_params.yaml
+[0.724s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/wiimote_node
+[0.726s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/feedback_tester.py
+[0.727s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/package_run_dependencies/wiimote
+[0.728s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/parent_prefix_path/wiimote
+[0.728s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.sh
+[0.729s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.dsv
+[0.729s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/path.sh
+[0.730s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/path.dsv
+[0.730s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.bash
+[0.731s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.sh
+[0.731s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.zsh
+[0.732s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.dsv
+[0.732s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.dsv
+[0.733s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/packages/wiimote
+[0.734s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/rclcpp_components/wiimote
+[0.738s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport.cmake
+[0.738s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport-noconfig.cmake
+[0.739s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimote-extras.cmake
+[0.739s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/ament_cmake_export_targets-extras.cmake
+[0.740s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.740s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig.cmake
+[0.741s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig-version.cmake
+[0.741s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.xml
+[0.749s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote

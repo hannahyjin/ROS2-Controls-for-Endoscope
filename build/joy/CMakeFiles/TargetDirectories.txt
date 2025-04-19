@@ -1,0 +1,14 @@
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/uninstall.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/joy_uninstall.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/joy.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/joy_node.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/game_controller.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/game_controller_node.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/joy_enumerate_devices.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/test.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/edit_cache.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/rebuild_cache.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/list_install_components.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/install.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/install/local.dir
+/home/bmes-endoscope-25/joystick_ws/build/joy/CMakeFiles/install/strip.dir

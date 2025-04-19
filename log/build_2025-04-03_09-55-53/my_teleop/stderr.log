@@ -1,0 +1,12 @@
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:[m[K In member function ‘[01m[Kvoid DpadTeleop::[01;32m[Kjoy_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:27:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<sensor_msgs::msg::Joy_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbutton[m[K’; did you mean ‘[01m[Kbuttons[m[K’?
+   27 |         float lb = msg->[01;31m[Kbutton[m[K[4];
+      |                         [01;31m[K^~~~~~[m[K
+      |                         [32m[Kbuttons[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:28:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing std::__shared_ptr_access<sensor_msgs::msg::Joy_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::element_type = struct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct sensor_msgs::msg::Joy_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kbutton[m[K’; did you mean ‘[01m[Kbuttons[m[K’?
+   28 |         float rb = msg->[01;31m[Kbutton[m[K[5];
+      |                         [01;31m[K^~~~~~[m[K
+      |                         [32m[Kbuttons[m[K
+gmake[2]: *** [CMakeFiles/controller_dpad.dir/build.make:76: CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/controller_dpad.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

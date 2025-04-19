@@ -1,0 +1,6 @@
+source;share/my_teleop/hook/cmake_prefix_path.dsv
+source;share/my_teleop/hook/cmake_prefix_path.sh
+source;share/my_teleop/local_setup.bash
+source;share/my_teleop/local_setup.dsv
+source;share/my_teleop/local_setup.sh
+source;share/my_teleop/local_setup.zsh

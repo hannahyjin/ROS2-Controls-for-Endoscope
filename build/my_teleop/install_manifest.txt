@@ -1,0 +1,16 @@
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/package_run_dependencies/my_teleop
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/parent_prefix_path/my_teleop
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.sh
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.dsv
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.sh
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.dsv
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.bash
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.sh
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.zsh
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.dsv
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.dsv
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/packages/my_teleop
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig.cmake
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig-version.cmake
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.xml
+/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/my_teleop/controller_dpad

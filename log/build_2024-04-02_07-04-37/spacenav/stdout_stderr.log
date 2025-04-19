@@ -1,0 +1,47 @@
+gmake: Warning: File 'Makefile' has modification time 29763693 s in the future
+gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 29763693 s in the future
+gmake[2]: Warning: File 'CMakeFiles/spacenav.dir/flags.make' has modification time 29763693 s in the future
+gmake[2]: Warning: File 'CMakeFiles/spacenav_node.dir/flags.make' has modification time 29763693 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'CMakeFiles/spacenav.dir/flags.make' has modification time 29763693 s in the future
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake[2]: Warning: File 'CMakeFiles/spacenav_node.dir/flags.make' has modification time 29763692 s in the future
+[ 25%] [32mBuilding CXX object CMakeFiles/spacenav.dir/src/spacenav.cpp.o[0m
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[ 75%] Built target spacenav_node
+[100%] [32m[1mLinking CXX shared library libspacenav.so[0m
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[100%] Built target spacenav
+gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+gmake: warning:  Clock skew detected.  Your build may be incomplete.
+-- Install configuration: ""
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/libspacenav.so
+-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/libspacenav.so" to ""
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/spacenav/spacenav_node
+-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/spacenav/spacenav_node" to ""
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav/spacenav/spacenav.hpp
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/classic-launch.py
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/no_deadband-launch.py
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/static_deadband-launch.py
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/package_run_dependencies/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/parent_prefix_path/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/ament_prefix_path.sh
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/ament_prefix_path.dsv
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/path.sh
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/path.dsv
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.bash
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.sh
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.zsh
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.dsv
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.dsv
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/packages/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/rclcpp_components/spacenav
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport.cmake
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport-noconfig.cmake
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/spacenavConfig.cmake
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/spacenavConfig-version.cmake
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.xml

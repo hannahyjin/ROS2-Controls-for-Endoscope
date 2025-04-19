@@ -1,0 +1,54 @@
+[0.112s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav -DCMAKE_INSTALL_PREFIX=/home/bmes-endoscope-25/joystick_ws/install/spacenav
+[0.625s] -- The C compiler identification is GNU 13.3.0
+[1.125s] -- The CXX compiler identification is GNU 13.3.0
+[1.259s] -- Detecting C compiler ABI info
+[2.055s] -- Detecting C compiler ABI info - done
+[2.105s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.106s] -- Detecting C compile features
+[2.108s] -- Detecting C compile features - done
+[2.164s] -- Detecting CXX compiler ABI info
+[2.926s] -- Detecting CXX compiler ABI info - done
+[3.010s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.015s] -- Detecting CXX compile features
+[3.015s] -- Detecting CXX compile features - done
+[3.040s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.535s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[5.506s] -- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+[5.986s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[6.152s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[6.278s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.425s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.730s] -- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)
+[7.160s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[7.192s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[7.763s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[7.884s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[8.016s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[8.686s] -- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)
+[9.138s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[9.284s] -- Found SPNAV: /usr/lib/libspnav.so  
+[9.320s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[10.321s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[10.326s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav/include>
+[10.326s] -- Configured cppcheck exclude dirs and/or files: 
+[10.344s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[10.344s] -- Configured cpplint exclude dirs and/or files: 
+[10.353s] -- Added test 'flake8' to check Python code syntax and style conventions
+[10.354s] -- Configured 'flake8' exclude dirs and/or files: 
+[10.358s] -- Added test 'lint_cmake' to check CMake code style
+[10.360s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[10.373s] -- Added test 'uncrustify' to check C / C++ code style
+[10.374s] -- Configured uncrustify additional arguments: 
+[10.379s] -- Added test 'xmllint' to check XML markup files
+[10.390s] -- Configuring done (10.2s)
+[10.525s] -- Generating done (0.1s)
+[10.562s] -- Build files have been written to: /home/bmes-endoscope-25/joystick_ws/build/spacenav
+[10.644s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav -DCMAKE_INSTALL_PREFIX=/home/bmes-endoscope-25/joystick_ws/install/spacenav
+[10.663s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/spacenav -- -j4 -l4
+[11.112s] [ 25%] [32mBuilding CXX object CMakeFiles/spacenav_node.dir/rclcpp_components/node_main_spacenav_node.cpp.o[0m
+[11.135s] [ 50%] [32mBuilding CXX object CMakeFiles/spacenav.dir/src/spacenav.cpp.o[0m
+[66.793s] [ 75%] [32m[1mLinking CXX executable spacenav_node[0m
+[70.025s] [ 75%] Built target spacenav_node
+[90.847s] gmake[2]: *** [CMakeFiles/spacenav.dir/build.make:76: CMakeFiles/spacenav.dir/src/spacenav.cpp.o] Interrupt
+[90.896s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/spacenav.dir/all] Interrupt
+[90.897s] gmake: *** [Makefile:146: all] Interrupt

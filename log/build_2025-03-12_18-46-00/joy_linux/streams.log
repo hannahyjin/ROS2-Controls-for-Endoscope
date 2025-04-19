@@ -1,0 +1,39 @@
+[0.104s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/bmes-endoscope-25/joystick_ws/install/joy_linux
+[0.187s] -- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.049s] -- Found diagnostic_msgs: 5.3.5 (/opt/ros/jazzy/share/diagnostic_msgs/cmake)
+[2.263s] -- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[2.325s] -- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[2.414s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.507s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.979s] -- Found diagnostic_updater: 4.2.2 (/opt/ros/jazzy/share/diagnostic_updater/cmake)
+[3.660s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[3.780s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.008s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[5.235s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[5.347s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.161s] -- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[7.288s] -- Looking for include file linux/joystick.h
+[8.449s] -- Looking for include file linux/joystick.h - found
+[8.485s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[9.461s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.462s] -- Configured cppcheck include dirs: /home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux/msg/cpp
+[9.463s] -- Configured cppcheck exclude dirs and/or files: 
+[9.472s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.473s] -- Configured cpplint exclude dirs and/or files: 
+[9.481s] -- Added test 'lint_cmake' to check CMake code style
+[9.493s] -- Added test 'uncrustify' to check C / C++ code style
+[9.495s] -- Configured uncrustify additional arguments: 
+[9.505s] -- Added test 'xmllint' to check XML markup files
+[9.523s] -- Configuring done (9.4s)
+[9.623s] -- Generating done (0.0s)
+[9.672s] -- Build files have been written to: /home/bmes-endoscope-25/joystick_ws/build/joy_linux
+[9.747s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/bmes-endoscope-25/joystick_ws/install/joy_linux
+[9.758s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy_linux -- -j4 -l4
+[10.230s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o[0m
+[90.806s] gmake[2]: *** wait: No child processes.  Stop.
+[90.811s] gmake[2]: *** Waiting for unfinished jobs....
+[90.813s] gmake[2]: *** wait: No child processes.  Stop.
+[90.921s] gmake[1]: *** wait: No child processes.  Stop.
+[90.935s] gmake[1]: *** Waiting for unfinished jobs....
+[90.944s] gmake[1]: *** wait: No child processes.  Stop.
+[90.945s] gmake: *** [Makefile:146: all] Error 2

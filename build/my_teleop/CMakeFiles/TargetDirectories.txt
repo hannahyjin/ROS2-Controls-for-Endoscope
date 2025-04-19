@@ -1,0 +1,10 @@
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/uninstall.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/my_teleop_uninstall.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/controller_dpad.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/test.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/edit_cache.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/rebuild_cache.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/list_install_components.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/install.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/install/local.dir
+/home/bmes-endoscope-25/joystick_ws/build/my_teleop/CMakeFiles/install/strip.dir

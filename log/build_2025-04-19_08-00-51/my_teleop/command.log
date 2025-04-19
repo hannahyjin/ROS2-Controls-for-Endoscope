@@ -1,0 +1,2 @@
+Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4

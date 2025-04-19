@@ -1,0 +1,3 @@
+/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs/rosidl_adapter/wiimote_msgs:msg/IrSourceInfo.idl
+/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs/rosidl_adapter/wiimote_msgs:msg/State.idl
+/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs/rosidl_adapter/wiimote_msgs:msg/TimedSwitch.idl

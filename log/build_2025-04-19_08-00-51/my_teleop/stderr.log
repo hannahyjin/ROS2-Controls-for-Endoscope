@@ -1,0 +1,38 @@
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:[m[K In member function ‘[01m[Kvoid DpadTeleop::[01;32m[Kjoy_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kenable_[m[K’ was not declared in this scope
+   19 |         [01;31m[Kenable_[m[K = msg->buttons[0];
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdpad_up[m[K’ was not declared in this scope
+   20 |         [01;31m[Kdpad_up[m[K = msg->buttons[13];
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdpad_down[m[K’ was not declared in this scope
+   21 |         [01;31m[Kdpad_down[m[K = msg->buttons[14];
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klb[m[K’ was not declared in this scope
+   22 |         [01;31m[Klb[m[K = msg->buttons[4];
+      |         [01;31m[K^~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krb[m[K’ was not declared in this scope
+   23 |         [01;31m[Krb[m[K = msg->buttons[5];
+      |         [01;31m[K^~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:[m[K In member function ‘[01m[Kvoid DpadTeleop::[01;32m[Ktimer_callback[m[K(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:30:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kenable_[m[K’ was not declared in this scope
+   30 |         if([01;31m[Kenable_[m[K)
+      |            [01;31m[K^~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:32:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdpad_up[m[K’ was not declared in this scope
+   32 |                 if ([01;31m[Kdpad_up[m[K)
+      |                     [01;31m[K^~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:34:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kdpad_down[m[K’ was not declared in this scope
+   34 |                 else if ([01;31m[Kdpad_down[m[K)
+      |                          [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:37:21:[m[K [01;31m[Kerror: [m[K‘[01m[Klb[m[K’ was not declared in this scope
+   37 |                 if ([01;31m[Klb[m[K)
+      |                     [01;31m[K^~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:39:26:[m[K [01;31m[Kerror: [m[K‘[01m[Krb[m[K’ was not declared in this scope
+   39 |                 else if ([01;31m[Krb[m[K)
+      |                          [01;31m[K^~[m[K
+[01m[K/home/bmes-endoscope-25/joystick_ws/src/my_teleop/src/controller_dpad.cpp:26:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   26 |     void timer_callback([01;35m[Kconst sensor_msgs::msg::Joy::SharedPtr msg[m[K)
+      |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/controller_dpad.dir/build.make:76: CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/controller_dpad.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

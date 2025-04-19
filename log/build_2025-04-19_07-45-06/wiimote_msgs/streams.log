@@ -1,0 +1,193 @@
+[0.130s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs -- -j4 -l4
+[0.533s] [  1%] Built target wiimote_msgs__rosidl_generator_type_description
+[0.712s] [  1%] Built target ament_cmake_python_copy_wiimote_msgs
+[0.809s] [  3%] Built target wiimote_msgs__cpp
+[0.810s] [ 24%] Built target wiimote_msgs__rosidl_generator_c
+[1.103s] [ 33%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_c
+[1.131s] [ 42%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_cpp
+[1.193s] [ 51%] Built target wiimote_msgs__rosidl_typesupport_cpp
+[1.448s] [ 61%] Built target wiimote_msgs__rosidl_typesupport_introspection_c
+[1.468s] [ 70%] Built target wiimote_msgs__rosidl_typesupport_c
+[1.543s] [ 79%] Built target wiimote_msgs__rosidl_typesupport_introspection_cpp
+[1.709s] [ 79%] Built target wiimote_msgs
+[1.952s] [ 81%] Built target wiimote_msgs__py
+[2.211s] [ 88%] Built target wiimote_msgs__rosidl_generator_py
+[2.418s] [ 92%] Built target wiimote_msgs_s__rosidl_typesupport_fastrtps_c
+[2.443s] [ 96%] Built target wiimote_msgs_s__rosidl_typesupport_introspection_c
+[2.465s] [100%] Built target wiimote_msgs_s__rosidl_typesupport_c
+[2.761s] running egg_info
+[2.853s] writing wiimote_msgs.egg-info/PKG-INFO
+[2.854s] writing dependency_links to wiimote_msgs.egg-info/dependency_links.txt
+[2.857s] writing top-level names to wiimote_msgs.egg-info/top_level.txt
+[3.115s] reading manifest file 'wiimote_msgs.egg-info/SOURCES.txt'
+[3.118s] writing manifest file 'wiimote_msgs.egg-info/SOURCES.txt'
+[3.288s] [100%] Built target ament_cmake_python_build_wiimote_msgs_egg
+[3.353s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs -- -j4 -l4
+[3.359s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs
+[3.404s] -- Install configuration: ""
+[3.404s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/rosidl_interfaces/wiimote_msgs
+[3.405s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.json
+[3.405s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.json
+[3.405s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.json
+[3.406s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.406s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.407s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.h
+[3.407s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.h
+[3.408s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.408s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.h
+[3.408s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.c
+[3.409s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.h
+[3.409s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.h
+[3.410s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.h
+[3.410s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.c
+[3.411s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.c
+[3.411s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.c
+[3.412s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.h
+[3.412s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.h
+[3.413s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.h
+[3.413s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.c
+[3.413s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__description.c
+[3.414s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__description.c
+[3.414s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.c
+[3.415s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.h
+[3.415s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.h
+[3.415s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__description.c
+[3.416s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.417s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.h
+[3.417s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.sh
+[3.417s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.dsv
+[3.418s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_c.so
+[3.418s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.419s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.419s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.420s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.420s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h
+[3.421s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_c.h
+[3.421s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_c.h
+[3.422s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_c.so
+[3.423s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.424s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.425s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.425s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.hpp
+[3.426s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.hpp
+[3.427s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.427s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.hpp
+[3.428s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__traits.hpp
+[3.429s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.hpp
+[3.429s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__builder.hpp
+[3.430s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.hpp
+[3.432s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__traits.hpp
+[3.434s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.hpp
+[3.435s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__builder.hpp
+[3.436s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__traits.hpp
+[3.437s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__builder.hpp
+[3.438s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.hpp
+[3.439s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.hpp
+[3.440s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.hpp
+[3.441s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.441s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.441s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.442s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.442s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_cpp.hpp
+[3.443s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/dds_fastrtps
+[3.443s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp
+[3.443s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_cpp.hpp
+[3.444s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.444s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.445s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.445s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.445s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.446s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.c
+[3.446s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_c.h
+[3.447s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.c
+[3.447s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_c.h
+[3.447s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h
+[3.448s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.c
+[3.448s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_c.so
+[3.448s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_c.so
+[3.449s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs
+[3.450s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg
+[3.450s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail
+[3.451s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_cpp.hpp
+[3.451s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp
+[3.452s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.cpp
+[3.452s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.cpp
+[3.453s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_cpp.hpp
+[3.453s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.cpp
+[3.454s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_cpp.so
+[3.455s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_cpp.so
+[3.457s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.sh
+[3.457s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.dsv
+[3.458s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info
+[3.458s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/SOURCES.txt
+[3.459s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/top_level.txt
+[3.460s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/PKG-INFO
+[3.461s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/dependency_links.txt
+[3.463s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs
+[3.463s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so
+[3.464s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so
+[3.464s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/__init__.py
+[3.465s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.465s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg
+[3.465s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/__init__.py
+[3.466s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_state.py
+[3.466s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_ir_source_info.py
+[3.467s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_timed_switch.py
+[3.467s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_timed_switch_s.c
+[3.468s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_state_s.c
+[3.468s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_ir_source_info_s.c
+[3.469s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so
+[3.469s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_c.c
+[3.469s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.637s] Listing '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs'...
+[3.639s] Listing '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg'...
+[3.672s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so
+[3.674s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so
+[3.676s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so
+[3.678s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_py.so
+[3.679s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.idl
+[3.680s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.idl
+[3.681s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.idl
+[3.681s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.msg
+[3.682s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.msg
+[3.682s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.msg
+[3.683s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/package_run_dependencies/wiimote_msgs
+[3.683s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/parent_prefix_path/wiimote_msgs
+[3.684s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.sh
+[3.684s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.dsv
+[3.685s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/path.sh
+[3.685s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/path.dsv
+[3.686s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.bash
+[3.686s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.sh
+[3.686s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.zsh
+[3.687s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.dsv
+[3.687s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv
+[3.688s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/packages/wiimote_msgs
+[3.688s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport.cmake
+[3.689s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.689s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.690s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.690s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cppExport.cmake
+[3.691s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.692s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.693s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.693s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.694s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport.cmake
+[3.694s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.695s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.696s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.696s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport.cmake
+[3.697s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.698s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport.cmake
+[3.698s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.699s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake-extras.cmake
+[3.699s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.700s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.700s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.701s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.701s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.702s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.702s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig.cmake
+[3.703s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig-version.cmake
+[3.703s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.xml
+[3.712s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs

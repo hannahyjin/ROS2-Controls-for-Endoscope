@@ -1,0 +1,2164 @@
+[0.000000] (-) TimerEvent: {}
+[0.002226] (joy_linux) JobQueued: {'identifier': 'joy_linux', 'dependencies': OrderedDict()}
+[0.003161] (sdl2_vendor) JobQueued: {'identifier': 'sdl2_vendor', 'dependencies': OrderedDict()}
+[0.004563] (spacenav) JobQueued: {'identifier': 'spacenav', 'dependencies': OrderedDict()}
+[0.004881] (wiimote_msgs) JobQueued: {'identifier': 'wiimote_msgs', 'dependencies': OrderedDict()}
+[0.005000] (joy) JobQueued: {'identifier': 'joy', 'dependencies': OrderedDict({'sdl2_vendor': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor'})}
+[0.005121] (wiimote) JobQueued: {'identifier': 'wiimote', 'dependencies': OrderedDict({'wiimote_msgs': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs'})}
+[0.005212] (sdl2_vendor) JobStarted: {'identifier': 'sdl2_vendor'}
+[0.057823] (wiimote_msgs) JobStarted: {'identifier': 'wiimote_msgs'}
+[0.082459] (joy_linux) JobStarted: {'identifier': 'joy_linux'}
+[0.100939] (-) TimerEvent: {}
+[0.116818] (spacenav) JobStarted: {'identifier': 'spacenav'}
+[0.154655] (sdl2_vendor) JobProgress: {'identifier': 'sdl2_vendor', 'progress': 'cmake'}
+[0.158297] (sdl2_vendor) JobProgress: {'identifier': 'sdl2_vendor', 'progress': 'build'}
+[0.160782] (sdl2_vendor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.175096] (wiimote_msgs) JobProgress: {'identifier': 'wiimote_msgs', 'progress': 'cmake'}
+[0.178820] (wiimote_msgs) JobProgress: {'identifier': 'wiimote_msgs', 'progress': 'build'}
+[0.183669] (wiimote_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.192050] (joy_linux) JobProgress: {'identifier': 'joy_linux', 'progress': 'cmake'}
+[0.200510] (joy_linux) JobProgress: {'identifier': 'joy_linux', 'progress': 'build'}
+[0.200724] (joy_linux) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.205190] (-) TimerEvent: {}
+[0.269755] (spacenav) JobProgress: {'identifier': 'spacenav', 'progress': 'cmake'}
+[0.272641] (spacenav) JobProgress: {'identifier': 'spacenav', 'progress': 'build'}
+[0.274634] (spacenav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/spacenav', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/spacenav', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/spacenav', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.308566] (-) TimerEvent: {}
+[0.409436] (-) TimerEvent: {}
+[0.517575] (-) TimerEvent: {}
+[0.620598] (-) TimerEvent: {}
+[0.650612] (sdl2_vendor) CommandEnded: {'returncode': 0}
+[0.662620] (sdl2_vendor) JobProgress: {'identifier': 'sdl2_vendor', 'progress': 'install'}
+[0.713871] (wiimote_msgs) StdoutLine: {'line': b'[  1%] Built target wiimote_msgs__rosidl_generator_type_description\n'}
+[0.724568] (-) TimerEvent: {}
+[0.795684] (wiimote_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_wiimote_msgs\n'}
+[0.825308] (-) TimerEvent: {}
+[0.860847] (sdl2_vendor) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.926630] (-) TimerEvent: {}
+[0.985756] (joy_linux) StdoutLine: {'line': b'[100%] Built target joy_linux_node\n'}
+[1.014574] (wiimote_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.027673] (-) TimerEvent: {}
+[1.054337] (sdl2_vendor) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.063028] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake\n'}
+[1.066879] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules\n'}
+[1.067608] (spacenav) StdoutLine: {'line': b'[ 50%] Built target spacenav_node\n'}
+[1.078301] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules/Findsdl2_custom.cmake\n'}
+[1.079329] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/ament_index/resource_index/package_run_dependencies/sdl2_vendor\n'}
+[1.080102] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/ament_index/resource_index/parent_prefix_path/sdl2_vendor\n'}
+[1.080815] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.sh\n'}
+[1.084611] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.dsv\n'}
+[1.085613] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.sh\n'}
+[1.086147] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.dsv\n'}
+[1.086671] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.bash\n'}
+[1.087138] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.sh\n'}
+[1.090773] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.zsh\n'}
+[1.094131] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.dsv\n'}
+[1.094892] (sdl2_vendor) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv\n'}
+[1.096674] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/ament_index/resource_index/packages/sdl2_vendor\n'}
+[1.099299] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendor-extras.cmake\n'}
+[1.099935] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig.cmake\n'}
+[1.103853] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig-version.cmake\n'}
+[1.105018] (sdl2_vendor) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.xml\n'}
+[1.117177] (spacenav) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/spacenav.dir/src/spacenav.cpp.o\x1b[0m\n'}
+[1.126947] (sdl2_vendor) CommandEnded: {'returncode': 0}
+[1.139813] (-) TimerEvent: {}
+[1.189640] (wiimote_msgs) StdoutLine: {'line': b'[ 24%] Built target wiimote_msgs__rosidl_generator_c\n'}
+[1.243731] (-) TimerEvent: {}
+[1.345538] (sdl2_vendor) JobEnded: {'identifier': 'sdl2_vendor', 'rc': 0}
+[1.351174] (-) TimerEvent: {}
+[1.362667] (joy) JobStarted: {'identifier': 'joy'}
+[1.407812] (joy_linux) CommandEnded: {'returncode': 0}
+[1.428651] (joy_linux) JobProgress: {'identifier': 'joy_linux', 'progress': 'install'}
+[1.428887] (joy_linux) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/joy_linux'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.457182] (joy) JobProgress: {'identifier': 'joy', 'progress': 'cmake'}
+[1.457627] (-) TimerEvent: {}
+[1.473745] (joy) JobProgress: {'identifier': 'joy', 'progress': 'build'}
+[1.473980] (joy) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/joy', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/joy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/joy', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[1.522199] (joy_linux) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.525552] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/joy_linux/joy_linux_node\n'}
+[1.528675] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/package_run_dependencies/joy_linux\n'}
+[1.532223] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/parent_prefix_path/joy_linux\n'}
+[1.533352] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.sh\n'}
+[1.535502] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.dsv\n'}
+[1.539089] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/path.sh\n'}
+[1.542510] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/environment/path.dsv\n'}
+[1.544088] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.bash\n'}
+[1.546898] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.sh\n'}
+[1.547357] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.zsh\n'}
+[1.548050] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/local_setup.dsv\n'}
+[1.548829] (joy_linux) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.dsv\n'}
+[1.554305] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/ament_index/resource_index/packages/joy_linux\n'}
+[1.555191] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig.cmake\n'}
+[1.555826] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig-version.cmake\n'}
+[1.568842] (-) TimerEvent: {}
+[1.580780] (joy_linux) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.xml\n'}
+[1.655623] (joy_linux) CommandEnded: {'returncode': 0}
+[1.677623] (-) TimerEvent: {}
+[1.771694] (wiimote_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libwiimote_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.782538] (-) TimerEvent: {}
+[1.903756] (-) TimerEvent: {}
+[1.960040] (joy_linux) JobEnded: {'identifier': 'joy_linux', 'rc': 0}
+[2.005914] (-) TimerEvent: {}
+[2.111588] (-) TimerEvent: {}
+[2.216555] (-) TimerEvent: {}
+[2.317548] (-) TimerEvent: {}
+[2.325865] (wiimote_msgs) StdoutLine: {'line': b'[ 33%] Built target wiimote_msgs__rosidl_typesupport_introspection_c\n'}
+[2.337680] (joy) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/joy.dir/src/joy.cpp.o\x1b[0m\n'}
+[2.425582] (-) TimerEvent: {}
+[2.526522] (-) TimerEvent: {}
+[2.535543] (wiimote_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.632572] (-) TimerEvent: {}
+[2.734589] (-) TimerEvent: {}
+[2.842512] (joy) StdoutLine: {'line': b'[ 30%] Built target joy_node\n'}
+[2.843108] (-) TimerEvent: {}
+[2.967538] (-) TimerEvent: {}
+[2.998329] (joy) StdoutLine: {'line': b'[ 50%] Built target game_controller_node\n'}
+[3.071530] (-) TimerEvent: {}
+[3.172336] (-) TimerEvent: {}
+[3.273436] (-) TimerEvent: {}
+[3.374348] (-) TimerEvent: {}
+[3.405147] (joy) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/joy_enumerate_devices.dir/src/joy_enumerate_devices.cpp.o\x1b[0m\n'}
+[3.476616] (-) TimerEvent: {}
+[3.580761] (-) TimerEvent: {}
+[3.685552] (-) TimerEvent: {}
+[3.786552] (-) TimerEvent: {}
+[3.892079] (-) TimerEvent: {}
+[4.005550] (-) TimerEvent: {}
+[4.106297] (-) TimerEvent: {}
+[4.212531] (-) TimerEvent: {}
+[4.313457] (-) TimerEvent: {}
+[4.417583] (-) TimerEvent: {}
+[4.520745] (-) TimerEvent: {}
+[4.623535] (-) TimerEvent: {}
+[4.726924] (-) TimerEvent: {}
+[4.836532] (-) TimerEvent: {}
+[4.939527] (-) TimerEvent: {}
+[5.042573] (-) TimerEvent: {}
+[5.142720] (wiimote_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.143358] (-) TimerEvent: {}
+[5.248542] (-) TimerEvent: {}
+[5.349503] (-) TimerEvent: {}
+[5.456547] (-) TimerEvent: {}
+[5.558143] (-) TimerEvent: {}
+[5.676129] (-) TimerEvent: {}
+[5.783189] (-) TimerEvent: {}
+[5.886894] (-) TimerEvent: {}
+[5.893414] (wiimote_msgs) StdoutLine: {'line': b'writing wiimote_msgs.egg-info/PKG-INFO\n'}
+[5.901802] (wiimote_msgs) StdoutLine: {'line': b'writing dependency_links to wiimote_msgs.egg-info/dependency_links.txt\n'}
+[5.902771] (wiimote_msgs) StdoutLine: {'line': b'writing top-level names to wiimote_msgs.egg-info/top_level.txt\n'}
+[5.992587] (-) TimerEvent: {}
+[6.097579] (-) TimerEvent: {}
+[6.205610] (-) TimerEvent: {}
+[6.306515] (-) TimerEvent: {}
+[6.408556] (-) TimerEvent: {}
+[6.514596] (-) TimerEvent: {}
+[6.621555] (-) TimerEvent: {}
+[6.724562] (-) TimerEvent: {}
+[6.827595] (-) TimerEvent: {}
+[6.932550] (-) TimerEvent: {}
+[7.033340] (-) TimerEvent: {}
+[7.136922] (-) TimerEvent: {}
+[7.242567] (-) TimerEvent: {}
+[7.348529] (-) TimerEvent: {}
+[7.421570] (wiimote_msgs) StdoutLine: {'line': b"reading manifest file 'wiimote_msgs.egg-info/SOURCES.txt'\n"}
+[7.427692] (wiimote_msgs) StdoutLine: {'line': b"writing manifest file 'wiimote_msgs.egg-info/SOURCES.txt'\n"}
+[7.453643] (-) TimerEvent: {}
+[7.558615] (-) TimerEvent: {}
+[7.664558] (-) TimerEvent: {}
+[7.767570] (-) TimerEvent: {}
+[7.868590] (-) TimerEvent: {}
+[7.972916] (-) TimerEvent: {}
+[8.067690] (wiimote_msgs) StdoutLine: {'line': b'[ 35%] Built target ament_cmake_python_build_wiimote_msgs_egg\n'}
+[8.074553] (-) TimerEvent: {}
+[8.176843] (-) TimerEvent: {}
+[8.280584] (-) TimerEvent: {}
+[8.383577] (-) TimerEvent: {}
+[8.486571] (-) TimerEvent: {}
+[8.592578] (-) TimerEvent: {}
+[8.697574] (-) TimerEvent: {}
+[8.798710] (-) TimerEvent: {}
+[8.902574] (-) TimerEvent: {}
+[9.003583] (-) TimerEvent: {}
+[9.109141] (-) TimerEvent: {}
+[9.222545] (-) TimerEvent: {}
+[9.325554] (-) TimerEvent: {}
+[9.428559] (-) TimerEvent: {}
+[9.529578] (-) TimerEvent: {}
+[9.630568] (-) TimerEvent: {}
+[9.734634] (-) TimerEvent: {}
+[9.837593] (-) TimerEvent: {}
+[9.940581] (-) TimerEvent: {}
+[10.044577] (-) TimerEvent: {}
+[10.145758] (-) TimerEvent: {}
+[10.250737] (-) TimerEvent: {}
+[10.354630] (-) TimerEvent: {}
+[10.388356] (joy) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX executable joy_enumerate_devices\x1b[0m\n'}
+[10.455645] (-) TimerEvent: {}
+[10.559923] (-) TimerEvent: {}
+[10.665957] (-) TimerEvent: {}
+[10.773677] (-) TimerEvent: {}
+[10.874775] (-) TimerEvent: {}
+[10.979078] (-) TimerEvent: {}
+[11.088190] (-) TimerEvent: {}
+[11.189474] (-) TimerEvent: {}
+[11.294596] (-) TimerEvent: {}
+[11.355788] (joy) StdoutLine: {'line': b'[ 70%] Built target joy_enumerate_devices\n'}
+[11.398587] (-) TimerEvent: {}
+[11.499592] (-) TimerEvent: {}
+[11.604172] (-) TimerEvent: {}
+[11.705261] (-) TimerEvent: {}
+[11.809861] (-) TimerEvent: {}
+[11.914045] (-) TimerEvent: {}
+[12.018450] (-) TimerEvent: {}
+[12.124053] (-) TimerEvent: {}
+[12.235136] (-) TimerEvent: {}
+[12.337596] (-) TimerEvent: {}
+[12.439606] (-) TimerEvent: {}
+[12.544130] (-) TimerEvent: {}
+[12.591597] (wiimote_msgs) StdoutLine: {'line': b'[ 35%] Built target wiimote_msgs__cpp\n'}
+[12.644466] (-) TimerEvent: {}
+[12.749571] (-) TimerEvent: {}
+[12.850575] (-) TimerEvent: {}
+[12.953895] (-) TimerEvent: {}
+[12.993899] (wiimote_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/ir_source_info__type_support_c.cpp.o\x1b[0m\n'}
+[13.056633] (-) TimerEvent: {}
+[13.157959] (-) TimerEvent: {}
+[13.261004] (-) TimerEvent: {}
+[13.362197] (-) TimerEvent: {}
+[13.465023] (-) TimerEvent: {}
+[13.569147] (-) TimerEvent: {}
+[13.670307] (-) TimerEvent: {}
+[13.776104] (-) TimerEvent: {}
+[13.877459] (-) TimerEvent: {}
+[13.978658] (-) TimerEvent: {}
+[14.083017] (-) TimerEvent: {}
+[14.184184] (-) TimerEvent: {}
+[14.287585] (-) TimerEvent: {}
+[14.388673] (-) TimerEvent: {}
+[14.489928] (-) TimerEvent: {}
+[14.594034] (-) TimerEvent: {}
+[14.695325] (-) TimerEvent: {}
+[14.799129] (-) TimerEvent: {}
+[14.900548] (-) TimerEvent: {}
+[15.003181] (-) TimerEvent: {}
+[15.107009] (-) TimerEvent: {}
+[15.208217] (-) TimerEvent: {}
+[15.312821] (-) TimerEvent: {}
+[15.417448] (-) TimerEvent: {}
+[15.521052] (-) TimerEvent: {}
+[15.622339] (-) TimerEvent: {}
+[15.727122] (-) TimerEvent: {}
+[15.828472] (-) TimerEvent: {}
+[15.931626] (-) TimerEvent: {}
+[16.032950] (-) TimerEvent: {}
+[16.137035] (-) TimerEvent: {}
+[16.241077] (-) TimerEvent: {}
+[16.344587] (-) TimerEvent: {}
+[16.445675] (-) TimerEvent: {}
+[16.546828] (-) TimerEvent: {}
+[16.649936] (-) TimerEvent: {}
+[16.759881] (-) TimerEvent: {}
+[16.863600] (-) TimerEvent: {}
+[16.964597] (-) TimerEvent: {}
+[17.019103] (wiimote_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/state__type_support_c.cpp.o\x1b[0m\n'}
+[17.067664] (-) TimerEvent: {}
+[17.168941] (-) TimerEvent: {}
+[17.271592] (-) TimerEvent: {}
+[17.375756] (-) TimerEvent: {}
+[17.479637] (-) TimerEvent: {}
+[17.580715] (-) TimerEvent: {}
+[17.681600] (-) TimerEvent: {}
+[17.782624] (-) TimerEvent: {}
+[17.888158] (-) TimerEvent: {}
+[17.989318] (-) TimerEvent: {}
+[18.092556] (-) TimerEvent: {}
+[18.193486] (-) TimerEvent: {}
+[18.294338] (-) TimerEvent: {}
+[18.397763] (-) TimerEvent: {}
+[18.501016] (-) TimerEvent: {}
+[18.605802] (-) TimerEvent: {}
+[18.707564] (-) TimerEvent: {}
+[18.811556] (-) TimerEvent: {}
+[18.912593] (-) TimerEvent: {}
+[19.017070] (-) TimerEvent: {}
+[19.119561] (-) TimerEvent: {}
+[19.222684] (-) TimerEvent: {}
+[19.324115] (-) TimerEvent: {}
+[19.427136] (-) TimerEvent: {}
+[19.530638] (-) TimerEvent: {}
+[19.631916] (-) TimerEvent: {}
+[19.734591] (-) TimerEvent: {}
+[19.835592] (-) TimerEvent: {}
+[19.937605] (-) TimerEvent: {}
+[20.040587] (-) TimerEvent: {}
+[20.141509] (-) TimerEvent: {}
+[20.242353] (-) TimerEvent: {}
+[20.345619] (-) TimerEvent: {}
+[20.446610] (-) TimerEvent: {}
+[20.547650] (-) TimerEvent: {}
+[20.650674] (-) TimerEvent: {}
+[20.751683] (-) TimerEvent: {}
+[20.852750] (-) TimerEvent: {}
+[20.953498] (wiimote_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/wiimote_msgs/msg/detail/timed_switch__type_support_c.cpp.o\x1b[0m\n'}
+[20.954623] (-) TimerEvent: {}
+[21.055788] (-) TimerEvent: {}
+[21.156802] (-) TimerEvent: {}
+[21.257791] (-) TimerEvent: {}
+[21.358717] (-) TimerEvent: {}
+[21.459586] (-) TimerEvent: {}
+[21.560631] (-) TimerEvent: {}
+[21.661905] (-) TimerEvent: {}
+[21.763125] (-) TimerEvent: {}
+[21.864256] (-) TimerEvent: {}
+[21.965542] (-) TimerEvent: {}
+[22.066597] (-) TimerEvent: {}
+[22.167683] (-) TimerEvent: {}
+[22.268742] (-) TimerEvent: {}
+[22.369944] (-) TimerEvent: {}
+[22.471957] (-) TimerEvent: {}
+[22.575086] (-) TimerEvent: {}
+[22.676186] (-) TimerEvent: {}
+[22.777303] (-) TimerEvent: {}
+[22.878345] (-) TimerEvent: {}
+[22.982028] (-) TimerEvent: {}
+[23.083088] (-) TimerEvent: {}
+[23.184185] (-) TimerEvent: {}
+[23.285234] (-) TimerEvent: {}
+[23.386284] (-) TimerEvent: {}
+[23.491008] (-) TimerEvent: {}
+[23.592266] (-) TimerEvent: {}
+[23.693319] (-) TimerEvent: {}
+[23.794534] (-) TimerEvent: {}
+[23.895563] (-) TimerEvent: {}
+[23.998590] (-) TimerEvent: {}
+[24.099552] (-) TimerEvent: {}
+[24.138147] (wiimote_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[24.203587] (-) TimerEvent: {}
+[24.304627] (-) TimerEvent: {}
+[24.405795] (-) TimerEvent: {}
+[24.486975] (wiimote_msgs) StdoutLine: {'line': b'[ 42%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_c\n'}
+[24.506040] (-) TimerEvent: {}
+[24.566803] (wiimote_msgs) StdoutLine: {'line': b'[ 44%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.607559] (-) TimerEvent: {}
+[24.708428] (-) TimerEvent: {}
+[24.809326] (-) TimerEvent: {}
+[24.912842] (-) TimerEvent: {}
+[25.013731] (-) TimerEvent: {}
+[25.114592] (-) TimerEvent: {}
+[25.216547] (-) TimerEvent: {}
+[25.317483] (-) TimerEvent: {}
+[25.418581] (-) TimerEvent: {}
+[25.519504] (-) TimerEvent: {}
+[25.620348] (-) TimerEvent: {}
+[25.721253] (-) TimerEvent: {}
+[25.822204] (-) TimerEvent: {}
+[25.923140] (-) TimerEvent: {}
+[26.027279] (-) TimerEvent: {}
+[26.128305] (-) TimerEvent: {}
+[26.229441] (-) TimerEvent: {}
+[26.332820] (-) TimerEvent: {}
+[26.433692] (-) TimerEvent: {}
+[26.534674] (-) TimerEvent: {}
+[26.635554] (-) TimerEvent: {}
+[26.736551] (-) TimerEvent: {}
+[26.837723] (-) TimerEvent: {}
+[26.938604] (-) TimerEvent: {}
+[27.039527] (-) TimerEvent: {}
+[27.140610] (-) TimerEvent: {}
+[27.241784] (-) TimerEvent: {}
+[27.342690] (-) TimerEvent: {}
+[27.443533] (-) TimerEvent: {}
+[27.544442] (-) TimerEvent: {}
+[27.645290] (-) TimerEvent: {}
+[27.746228] (-) TimerEvent: {}
+[27.847190] (-) TimerEvent: {}
+[27.948119] (-) TimerEvent: {}
+[28.049123] (-) TimerEvent: {}
+[28.150160] (-) TimerEvent: {}
+[28.251048] (-) TimerEvent: {}
+[28.351985] (-) TimerEvent: {}
+[28.452961] (-) TimerEvent: {}
+[28.553973] (-) TimerEvent: {}
+[28.655576] (-) TimerEvent: {}
+[28.757166] (-) TimerEvent: {}
+[28.860919] (-) TimerEvent: {}
+[28.963618] (-) TimerEvent: {}
+[29.064484] (-) TimerEvent: {}
+[29.164649] (wiimote_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/ir_source_info__type_support.cpp.o\x1b[0m\n'}
+[29.165825] (-) TimerEvent: {}
+[29.266803] (-) TimerEvent: {}
+[29.367756] (-) TimerEvent: {}
+[29.468644] (-) TimerEvent: {}
+[29.569556] (-) TimerEvent: {}
+[29.670487] (-) TimerEvent: {}
+[29.771352] (-) TimerEvent: {}
+[29.872483] (-) TimerEvent: {}
+[29.973484] (-) TimerEvent: {}
+[30.074504] (-) TimerEvent: {}
+[30.175521] (-) TimerEvent: {}
+[30.276515] (-) TimerEvent: {}
+[30.377618] (-) TimerEvent: {}
+[30.480154] (-) TimerEvent: {}
+[30.581531] (-) TimerEvent: {}
+[30.685908] (-) TimerEvent: {}
+[30.786938] (-) TimerEvent: {}
+[30.888175] (-) TimerEvent: {}
+[30.989279] (-) TimerEvent: {}
+[31.090645] (-) TimerEvent: {}
+[31.191860] (-) TimerEvent: {}
+[31.292993] (-) TimerEvent: {}
+[31.394114] (-) TimerEvent: {}
+[31.496679] (-) TimerEvent: {}
+[31.610914] (-) TimerEvent: {}
+[31.714969] (-) TimerEvent: {}
+[31.818981] (-) TimerEvent: {}
+[31.920214] (-) TimerEvent: {}
+[32.021275] (-) TimerEvent: {}
+[32.122421] (-) TimerEvent: {}
+[32.223456] (-) TimerEvent: {}
+[32.324526] (-) TimerEvent: {}
+[32.419361] (wiimote_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/state__type_support.cpp.o\x1b[0m\n'}
+[32.424777] (-) TimerEvent: {}
+[32.525707] (-) TimerEvent: {}
+[32.626622] (-) TimerEvent: {}
+[32.727582] (-) TimerEvent: {}
+[32.828515] (-) TimerEvent: {}
+[32.929494] (-) TimerEvent: {}
+[33.033855] (-) TimerEvent: {}
+[33.134897] (-) TimerEvent: {}
+[33.235938] (-) TimerEvent: {}
+[33.336976] (-) TimerEvent: {}
+[33.438005] (-) TimerEvent: {}
+[33.539139] (-) TimerEvent: {}
+[33.640532] (-) TimerEvent: {}
+[33.741595] (-) TimerEvent: {}
+[33.845910] (-) TimerEvent: {}
+[33.946987] (-) TimerEvent: {}
+[34.048035] (-) TimerEvent: {}
+[34.149309] (-) TimerEvent: {}
+[34.250448] (-) TimerEvent: {}
+[34.358607] (-) TimerEvent: {}
+[34.459620] (-) TimerEvent: {}
+[34.560603] (-) TimerEvent: {}
+[34.661593] (-) TimerEvent: {}
+[34.762622] (-) TimerEvent: {}
+[34.863939] (-) TimerEvent: {}
+[34.964981] (-) TimerEvent: {}
+[35.066189] (-) TimerEvent: {}
+[35.167119] (-) TimerEvent: {}
+[35.270733] (-) TimerEvent: {}
+[35.371730] (-) TimerEvent: {}
+[35.472756] (-) TimerEvent: {}
+[35.575964] (-) TimerEvent: {}
+[35.677037] (-) TimerEvent: {}
+[35.778092] (-) TimerEvent: {}
+[35.879264] (-) TimerEvent: {}
+[35.983892] (-) TimerEvent: {}
+[36.085128] (-) TimerEvent: {}
+[36.186637] (-) TimerEvent: {}
+[36.290922] (-) TimerEvent: {}
+[36.392011] (-) TimerEvent: {}
+[36.417775] (wiimote_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/wiimote_msgs/msg/detail/dds_fastrtps/timed_switch__type_support.cpp.o\x1b[0m\n'}
+[36.494566] (-) TimerEvent: {}
+[36.595448] (-) TimerEvent: {}
+[36.697583] (-) TimerEvent: {}
+[36.798509] (-) TimerEvent: {}
+[36.900567] (-) TimerEvent: {}
+[37.003596] (-) TimerEvent: {}
+[37.104523] (-) TimerEvent: {}
+[37.205429] (-) TimerEvent: {}
+[37.307645] (-) TimerEvent: {}
+[37.409812] (-) TimerEvent: {}
+[37.518098] (-) TimerEvent: {}
+[37.621994] (-) TimerEvent: {}
+[37.723265] (-) TimerEvent: {}
+[37.824552] (-) TimerEvent: {}
+[37.925570] (-) TimerEvent: {}
+[38.026658] (-) TimerEvent: {}
+[38.131051] (-) TimerEvent: {}
+[38.232692] (-) TimerEvent: {}
+[38.334087] (-) TimerEvent: {}
+[38.435124] (-) TimerEvent: {}
+[38.536210] (-) TimerEvent: {}
+[38.637220] (-) TimerEvent: {}
+[38.738360] (-) TimerEvent: {}
+[38.839470] (-) TimerEvent: {}
+[38.943975] (-) TimerEvent: {}
+[39.045120] (-) TimerEvent: {}
+[39.146195] (-) TimerEvent: {}
+[39.247263] (-) TimerEvent: {}
+[39.348457] (-) TimerEvent: {}
+[39.449849] (-) TimerEvent: {}
+[39.551009] (-) TimerEvent: {}
+[39.652732] (-) TimerEvent: {}
+[39.753699] (-) TimerEvent: {}
+[39.854807] (-) TimerEvent: {}
+[39.955653] (-) TimerEvent: {}
+[39.980083] (wiimote_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[40.055864] (-) TimerEvent: {}
+[40.156844] (-) TimerEvent: {}
+[40.258030] (-) TimerEvent: {}
+[40.359190] (-) TimerEvent: {}
+[40.462883] (-) TimerEvent: {}
+[40.469943] (wiimote_msgs) StdoutLine: {'line': b'[ 51%] Built target wiimote_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[40.542633] (wiimote_msgs) StdoutLine: {'line': b'[ 53%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[40.563173] (-) TimerEvent: {}
+[40.664303] (-) TimerEvent: {}
+[40.766079] (-) TimerEvent: {}
+[40.867021] (-) TimerEvent: {}
+[40.970925] (-) TimerEvent: {}
+[41.073903] (-) TimerEvent: {}
+[41.177860] (-) TimerEvent: {}
+[41.280531] (-) TimerEvent: {}
+[41.384904] (-) TimerEvent: {}
+[41.485863] (-) TimerEvent: {}
+[41.586832] (-) TimerEvent: {}
+[41.687847] (-) TimerEvent: {}
+[41.791205] (-) TimerEvent: {}
+[41.896237] (-) TimerEvent: {}
+[41.997478] (-) TimerEvent: {}
+[42.098429] (-) TimerEvent: {}
+[42.200581] (-) TimerEvent: {}
+[42.301474] (-) TimerEvent: {}
+[42.403564] (-) TimerEvent: {}
+[42.504360] (-) TimerEvent: {}
+[42.607569] (-) TimerEvent: {}
+[42.708470] (-) TimerEvent: {}
+[42.810612] (-) TimerEvent: {}
+[42.911481] (-) TimerEvent: {}
+[43.013567] (-) TimerEvent: {}
+[43.114486] (-) TimerEvent: {}
+[43.215601] (-) TimerEvent: {}
+[43.316511] (-) TimerEvent: {}
+[43.417464] (-) TimerEvent: {}
+[43.518343] (-) TimerEvent: {}
+[43.619264] (-) TimerEvent: {}
+[43.720316] (-) TimerEvent: {}
+[43.821539] (-) TimerEvent: {}
+[43.922488] (-) TimerEvent: {}
+[44.023496] (-) TimerEvent: {}
+[44.124607] (-) TimerEvent: {}
+[44.225869] (-) TimerEvent: {}
+[44.327019] (-) TimerEvent: {}
+[44.428269] (-) TimerEvent: {}
+[44.529652] (-) TimerEvent: {}
+[44.631816] (-) TimerEvent: {}
+[44.732943] (-) TimerEvent: {}
+[44.835615] (-) TimerEvent: {}
+[44.939846] (-) TimerEvent: {}
+[45.038981] (wiimote_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/ir_source_info__type_support.cpp.o\x1b[0m\n'}
+[45.040261] (-) TimerEvent: {}
+[45.043658] (wiimote_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/state__type_support.cpp.o\x1b[0m\n'}
+[45.143583] (-) TimerEvent: {}
+[45.244571] (-) TimerEvent: {}
+[45.345544] (-) TimerEvent: {}
+[45.449560] (-) TimerEvent: {}
+[45.550574] (-) TimerEvent: {}
+[45.651820] (-) TimerEvent: {}
+[45.753128] (-) TimerEvent: {}
+[45.856991] (-) TimerEvent: {}
+[45.958239] (-) TimerEvent: {}
+[46.062066] (-) TimerEvent: {}
+[46.165607] (-) TimerEvent: {}
+[46.266753] (-) TimerEvent: {}
+[46.367962] (-) TimerEvent: {}
+[46.471613] (-) TimerEvent: {}
+[46.572632] (-) TimerEvent: {}
+[46.676604] (-) TimerEvent: {}
+[46.777621] (-) TimerEvent: {}
+[46.878776] (-) TimerEvent: {}
+[46.981654] (-) TimerEvent: {}
+[47.084669] (-) TimerEvent: {}
+[47.185747] (-) TimerEvent: {}
+[47.292154] (-) TimerEvent: {}
+[47.394925] (-) TimerEvent: {}
+[47.499851] (-) TimerEvent: {}
+[47.603887] (-) TimerEvent: {}
+[47.682618] (wiimote_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/wiimote_msgs/msg/detail/timed_switch__type_support.cpp.o\x1b[0m\n'}
+[47.705625] (-) TimerEvent: {}
+[47.807614] (-) TimerEvent: {}
+[47.911980] (-) TimerEvent: {}
+[48.013176] (-) TimerEvent: {}
+[48.114353] (-) TimerEvent: {}
+[48.219253] (-) TimerEvent: {}
+[48.320706] (-) TimerEvent: {}
+[48.425033] (-) TimerEvent: {}
+[48.525953] (-) TimerEvent: {}
+[48.626869] (-) TimerEvent: {}
+[48.727825] (-) TimerEvent: {}
+[48.828865] (-) TimerEvent: {}
+[48.929956] (-) TimerEvent: {}
+[49.031002] (-) TimerEvent: {}
+[49.132204] (-) TimerEvent: {}
+[49.233232] (-) TimerEvent: {}
+[49.334480] (-) TimerEvent: {}
+[49.435554] (-) TimerEvent: {}
+[49.536607] (-) TimerEvent: {}
+[49.637801] (-) TimerEvent: {}
+[49.738816] (-) TimerEvent: {}
+[49.839902] (-) TimerEvent: {}
+[49.940887] (-) TimerEvent: {}
+[50.041964] (-) TimerEvent: {}
+[50.143174] (-) TimerEvent: {}
+[50.246588] (-) TimerEvent: {}
+[50.257674] (wiimote_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[50.346835] (-) TimerEvent: {}
+[50.449976] (-) TimerEvent: {}
+[50.550849] (-) TimerEvent: {}
+[50.652573] (-) TimerEvent: {}
+[50.755653] (-) TimerEvent: {}
+[50.766877] (wiimote_msgs) StdoutLine: {'line': b'[ 61%] Built target wiimote_msgs__rosidl_typesupport_introspection_cpp\n'}
+[50.842591] (wiimote_msgs) StdoutLine: {'line': b'[ 62%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[50.843861] (wiimote_msgs) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[50.858641] (-) TimerEvent: {}
+[50.963103] (-) TimerEvent: {}
+[51.064361] (-) TimerEvent: {}
+[51.170098] (-) TimerEvent: {}
+[51.271286] (-) TimerEvent: {}
+[51.376323] (-) TimerEvent: {}
+[51.479589] (-) TimerEvent: {}
+[51.580530] (-) TimerEvent: {}
+[51.681460] (-) TimerEvent: {}
+[51.782595] (-) TimerEvent: {}
+[51.883419] (-) TimerEvent: {}
+[51.986641] (-) TimerEvent: {}
+[52.089332] (-) TimerEvent: {}
+[52.192935] (-) TimerEvent: {}
+[52.295568] (-) TimerEvent: {}
+[52.397535] (-) TimerEvent: {}
+[52.498319] (-) TimerEvent: {}
+[52.601545] (-) TimerEvent: {}
+[52.702402] (-) TimerEvent: {}
+[52.805565] (-) TimerEvent: {}
+[52.906603] (-) TimerEvent: {}
+[53.007919] (-) TimerEvent: {}
+[53.111566] (-) TimerEvent: {}
+[53.212506] (-) TimerEvent: {}
+[53.313334] (-) TimerEvent: {}
+[53.424633] (-) TimerEvent: {}
+[53.525971] (-) TimerEvent: {}
+[53.629925] (-) TimerEvent: {}
+[53.730873] (-) TimerEvent: {}
+[53.831829] (-) TimerEvent: {}
+[53.935907] (-) TimerEvent: {}
+[54.036840] (-) TimerEvent: {}
+[54.137726] (-) TimerEvent: {}
+[54.241577] (-) TimerEvent: {}
+[54.342483] (-) TimerEvent: {}
+[54.443459] (-) TimerEvent: {}
+[54.544470] (-) TimerEvent: {}
+[54.646565] (-) TimerEvent: {}
+[54.677559] (spacenav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libspacenav.so\x1b[0m\n'}
+[54.746959] (-) TimerEvent: {}
+[54.851791] (-) TimerEvent: {}
+[54.953760] (-) TimerEvent: {}
+[55.059716] (-) TimerEvent: {}
+[55.167715] (-) TimerEvent: {}
+[55.269359] (-) TimerEvent: {}
+[55.372732] (-) TimerEvent: {}
+[55.439958] (wiimote_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/state__type_support.cpp.o\x1b[0m\n'}
+[55.441862] (wiimote_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/ir_source_info__type_support.cpp.o\x1b[0m\n'}
+[55.475187] (-) TimerEvent: {}
+[55.573980] (wiimote_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/ir_source_info__type_support.cpp.o\x1b[0m\n'}
+[55.575221] (-) TimerEvent: {}
+[55.680693] (-) TimerEvent: {}
+[55.786683] (-) TimerEvent: {}
+[55.887779] (-) TimerEvent: {}
+[55.988668] (-) TimerEvent: {}
+[56.089730] (-) TimerEvent: {}
+[56.191594] (-) TimerEvent: {}
+[56.294912] (-) TimerEvent: {}
+[56.304185] (wiimote_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/state__type_support.cpp.o\x1b[0m\n'}
+[56.397594] (-) TimerEvent: {}
+[56.498747] (-) TimerEvent: {}
+[56.600826] (-) TimerEvent: {}
+[56.703905] (-) TimerEvent: {}
+[56.790709] (wiimote_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/wiimote_msgs/msg/timed_switch__type_support.cpp.o\x1b[0m\n'}
+[56.806573] (-) TimerEvent: {}
+[56.907593] (-) TimerEvent: {}
+[57.008584] (-) TimerEvent: {}
+[57.111620] (-) TimerEvent: {}
+[57.162869] (spacenav) StdoutLine: {'line': b'[100%] Built target spacenav\n'}
+[57.211845] (-) TimerEvent: {}
+[57.306930] (spacenav) CommandEnded: {'returncode': 0}
+[57.309747] (spacenav) JobProgress: {'identifier': 'spacenav', 'progress': 'install'}
+[57.310058] (spacenav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/spacenav'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/spacenav', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/spacenav', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[57.312053] (-) TimerEvent: {}
+[57.335872] (wiimote_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[57.394125] (spacenav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[57.395343] (spacenav) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/libspacenav.so\n'}
+[57.413634] (-) TimerEvent: {}
+[57.449939] (spacenav) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/libspacenav.so" to ""\n'}
+[57.457533] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/spacenav/spacenav_node\n'}
+[57.458430] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav\n'}
+[57.459134] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav/spacenav\n'}
+[57.460170] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/include/spacenav/spacenav/spacenav.hpp\n'}
+[57.464288] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch\n'}
+[57.468567] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/classic-launch.py\n'}
+[57.469823] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/no_deadband-launch.py\n'}
+[57.470647] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav//launch/static_deadband-launch.py\n'}
+[57.471773] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/package_run_dependencies/spacenav\n'}
+[57.476583] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/parent_prefix_path/spacenav\n'}
+[57.477786] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/ament_prefix_path.sh\n'}
+[57.482448] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/ament_prefix_path.dsv\n'}
+[57.483432] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/path.sh\n'}
+[57.484302] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/environment/path.dsv\n'}
+[57.491276] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.bash\n'}
+[57.492199] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.sh\n'}
+[57.493962] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.zsh\n'}
+[57.495070] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/local_setup.dsv\n'}
+[57.499341] (spacenav) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.dsv\n'}
+[57.503326] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/packages/spacenav\n'}
+[57.512925] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/ament_index/resource_index/rclcpp_components/spacenav\n'}
+[57.513938] (-) TimerEvent: {}
+[57.518716] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport.cmake\n'}
+[57.519792] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/export_spacenavExport-noconfig.cmake\n'}
+[57.538101] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[57.552680] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/spacenavConfig.cmake\n'}
+[57.558035] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/cmake/spacenavConfig-version.cmake\n'}
+[57.559067] (spacenav) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.xml\n'}
+[57.560015] (spacenav) CommandEnded: {'returncode': 0}
+[57.618165] (-) TimerEvent: {}
+[57.720332] (-) TimerEvent: {}
+[57.774632] (spacenav) JobEnded: {'identifier': 'spacenav', 'rc': 0}
+[57.781251] (wiimote_msgs) StdoutLine: {'line': b'[ 75%] Built target wiimote_msgs__rosidl_typesupport_c\n'}
+[57.820734] (-) TimerEvent: {}
+[57.922219] (-) TimerEvent: {}
+[58.026192] (-) TimerEvent: {}
+[58.127118] (-) TimerEvent: {}
+[58.230583] (-) TimerEvent: {}
+[58.331464] (-) TimerEvent: {}
+[58.419901] (wiimote_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/wiimote_msgs/msg/timed_switch__type_support.cpp.o\x1b[0m\n'}
+[58.431708] (-) TimerEvent: {}
+[58.532618] (-) TimerEvent: {}
+[58.633479] (-) TimerEvent: {}
+[58.734228] (-) TimerEvent: {}
+[58.835029] (-) TimerEvent: {}
+[58.935899] (-) TimerEvent: {}
+[59.036874] (-) TimerEvent: {}
+[59.137762] (-) TimerEvent: {}
+[59.238714] (-) TimerEvent: {}
+[59.339626] (-) TimerEvent: {}
+[59.440542] (-) TimerEvent: {}
+[59.541425] (-) TimerEvent: {}
+[59.642202] (-) TimerEvent: {}
+[59.743146] (-) TimerEvent: {}
+[59.844149] (-) TimerEvent: {}
+[59.945068] (-) TimerEvent: {}
+[60.045936] (-) TimerEvent: {}
+[60.146836] (-) TimerEvent: {}
+[60.247714] (-) TimerEvent: {}
+[60.289198] (wiimote_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[60.347919] (-) TimerEvent: {}
+[60.448725] (-) TimerEvent: {}
+[60.524933] (wiimote_msgs) StdoutLine: {'line': b'[ 79%] Built target wiimote_msgs__rosidl_typesupport_cpp\n'}
+[60.548944] (-) TimerEvent: {}
+[60.649268] (wiimote_msgs) StdoutLine: {'line': b'[ 79%] Built target wiimote_msgs\n'}
+[60.650074] (-) TimerEvent: {}
+[60.750945] (-) TimerEvent: {}
+[60.781655] (wiimote_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[60.851170] (-) TimerEvent: {}
+[60.951974] (-) TimerEvent: {}
+[61.052752] (-) TimerEvent: {}
+[61.153524] (-) TimerEvent: {}
+[61.254239] (-) TimerEvent: {}
+[61.355010] (-) TimerEvent: {}
+[61.455752] (-) TimerEvent: {}
+[61.556523] (-) TimerEvent: {}
+[61.657268] (-) TimerEvent: {}
+[61.758055] (-) TimerEvent: {}
+[61.858872] (-) TimerEvent: {}
+[61.959669] (-) TimerEvent: {}
+[62.060362] (-) TimerEvent: {}
+[62.161140] (-) TimerEvent: {}
+[62.261966] (-) TimerEvent: {}
+[62.362722] (-) TimerEvent: {}
+[62.463472] (-) TimerEvent: {}
+[62.564442] (-) TimerEvent: {}
+[62.665693] (-) TimerEvent: {}
+[62.766519] (-) TimerEvent: {}
+[62.867233] (-) TimerEvent: {}
+[62.967981] (-) TimerEvent: {}
+[63.068756] (-) TimerEvent: {}
+[63.169503] (-) TimerEvent: {}
+[63.270228] (-) TimerEvent: {}
+[63.371030] (-) TimerEvent: {}
+[63.471808] (-) TimerEvent: {}
+[63.572547] (-) TimerEvent: {}
+[63.673274] (-) TimerEvent: {}
+[63.774074] (-) TimerEvent: {}
+[63.874847] (-) TimerEvent: {}
+[63.975681] (-) TimerEvent: {}
+[64.076481] (-) TimerEvent: {}
+[64.177177] (-) TimerEvent: {}
+[64.277904] (-) TimerEvent: {}
+[64.378518] (-) TimerEvent: {}
+[64.479136] (-) TimerEvent: {}
+[64.579818] (-) TimerEvent: {}
+[64.680607] (-) TimerEvent: {}
+[64.781363] (-) TimerEvent: {}
+[64.882267] (-) TimerEvent: {}
+[64.983600] (-) TimerEvent: {}
+[65.084469] (-) TimerEvent: {}
+[65.185185] (-) TimerEvent: {}
+[65.285946] (-) TimerEvent: {}
+[65.386731] (-) TimerEvent: {}
+[65.487460] (-) TimerEvent: {}
+[65.588186] (-) TimerEvent: {}
+[65.688955] (-) TimerEvent: {}
+[65.789732] (-) TimerEvent: {}
+[65.890468] (-) TimerEvent: {}
+[65.991194] (-) TimerEvent: {}
+[66.091961] (-) TimerEvent: {}
+[66.192726] (-) TimerEvent: {}
+[66.293454] (-) TimerEvent: {}
+[66.394167] (-) TimerEvent: {}
+[66.494950] (-) TimerEvent: {}
+[66.595939] (-) TimerEvent: {}
+[66.697135] (-) TimerEvent: {}
+[66.798150] (-) TimerEvent: {}
+[66.899116] (-) TimerEvent: {}
+[67.000304] (-) TimerEvent: {}
+[67.101688] (-) TimerEvent: {}
+[67.205617] (-) TimerEvent: {}
+[67.306610] (-) TimerEvent: {}
+[67.407601] (-) TimerEvent: {}
+[67.416582] (wiimote_msgs) StdoutLine: {'line': b'[ 81%] Built target wiimote_msgs__py\n'}
+[67.507146] (joy) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libjoy.so\x1b[0m\n'}
+[67.507956] (-) TimerEvent: {}
+[67.570932] (wiimote_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_ir_source_info_s.c.o\x1b[0m\n'}
+[67.574099] (wiimote_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_timed_switch_s.c.o\x1b[0m\n'}
+[67.576132] (wiimote_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs__rosidl_generator_py.dir/rosidl_generator_py/wiimote_msgs/msg/_state_s.c.o\x1b[0m\n'}
+[67.608263] (-) TimerEvent: {}
+[67.712167] (-) TimerEvent: {}
+[67.814576] (-) TimerEvent: {}
+[67.915552] (-) TimerEvent: {}
+[68.019886] (-) TimerEvent: {}
+[68.122577] (-) TimerEvent: {}
+[68.227287] (-) TimerEvent: {}
+[68.328830] (-) TimerEvent: {}
+[68.432659] (-) TimerEvent: {}
+[68.538976] (-) TimerEvent: {}
+[68.639995] (-) TimerEvent: {}
+[68.741756] (-) TimerEvent: {}
+[68.843521] (-) TimerEvent: {}
+[68.944610] (-) TimerEvent: {}
+[69.011441] (wiimote_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library libwiimote_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[69.044912] (-) TimerEvent: {}
+[69.146079] (-) TimerEvent: {}
+[69.247480] (-) TimerEvent: {}
+[69.348879] (-) TimerEvent: {}
+[69.385208] (wiimote_msgs) StdoutLine: {'line': b'[ 88%] Built target wiimote_msgs__rosidl_generator_py\n'}
+[69.449181] (-) TimerEvent: {}
+[69.551624] (-) TimerEvent: {}
+[69.555729] (wiimote_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[69.560602] (wiimote_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[69.582282] (wiimote_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/wiimote_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[69.653573] (-) TimerEvent: {}
+[69.754799] (-) TimerEvent: {}
+[69.859051] (-) TimerEvent: {}
+[69.962621] (-) TimerEvent: {}
+[70.063595] (-) TimerEvent: {}
+[70.153033] (joy) StdoutLine: {'line': b'[ 80%] Built target joy\n'}
+[70.165346] (-) TimerEvent: {}
+[70.268925] (-) TimerEvent: {}
+[70.303784] (wiimote_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[70.313703] (wiimote_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[70.360867] (joy) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/game_controller.dir/src/game_controller.cpp.o\x1b[0m\n'}
+[70.369156] (-) TimerEvent: {}
+[70.469560] (wiimote_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[70.470451] (-) TimerEvent: {}
+[70.533218] (wiimote_msgs) StdoutLine: {'line': b'[100%] Built target wiimote_msgs_s__rosidl_typesupport_c\n'}
+[70.546530] (wiimote_msgs) StdoutLine: {'line': b'[100%] Built target wiimote_msgs_s__rosidl_typesupport_introspection_c\n'}
+[70.572567] (-) TimerEvent: {}
+[70.673273] (-) TimerEvent: {}
+[70.678518] (wiimote_msgs) StdoutLine: {'line': b'[100%] Built target wiimote_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[70.741757] (wiimote_msgs) CommandEnded: {'returncode': 0}
+[70.744108] (wiimote_msgs) JobProgress: {'identifier': 'wiimote_msgs', 'progress': 'install'}
+[70.744973] (wiimote_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[70.773522] (-) TimerEvent: {}
+[70.792768] (wiimote_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[70.793593] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/rosidl_interfaces/wiimote_msgs\n'}
+[70.794155] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.json\n'}
+[70.794616] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.json\n'}
+[70.795102] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.json\n'}
+[70.795798] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.796195] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.796602] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.h\n'}
+[70.797150] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.h\n'}
+[70.797880] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.798248] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.h\n'}
+[70.798763] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.c\n'}
+[70.799154] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.h\n'}
+[70.799810] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.h\n'}
+[70.800429] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.h\n'}
+[70.800894] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__functions.c\n'}
+[70.801241] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.c\n'}
+[70.801806] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__functions.c\n'}
+[70.802185] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.h\n'}
+[70.802576] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.h\n'}
+[70.802944] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.h\n'}
+[70.803467] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__functions.c\n'}
+[70.803974] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__description.c\n'}
+[70.804354] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__description.c\n'}
+[70.804784] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.c\n'}
+[70.805259] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.h\n'}
+[70.805909] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.h\n'}
+[70.806342] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__description.c\n'}
+[70.806861] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[70.807271] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.h\n'}
+[70.807698] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.sh\n'}
+[70.808066] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/library_path.dsv\n'}
+[70.808513] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_c.so\n'}
+[70.809046] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.809436] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.809917] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[70.810480] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.810903] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_c.h\n'}
+[70.811341] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_c.h\n'}
+[70.812691] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_c.h\n'}
+[70.815021] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[70.818805] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[70.819853] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.820524] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.821318] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[70.822083] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/ir_source_info.hpp\n'}
+[70.823130] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/timed_switch.hpp\n'}
+[70.824227] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.824830] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__struct.hpp\n'}
+[70.826079] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__traits.hpp\n'}
+[70.827443] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.hpp\n'}
+[70.828729] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__builder.hpp\n'}
+[70.830034] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.hpp\n'}
+[70.831293] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__traits.hpp\n'}
+[70.832601] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.hpp\n'}
+[70.833828] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__builder.hpp\n'}
+[70.835035] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__traits.hpp\n'}
+[70.836299] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__builder.hpp\n'}
+[70.837584] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__struct.hpp\n'}
+[70.838811] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__struct.hpp\n'}
+[70.839980] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/state.hpp\n'}
+[70.841231] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.841871] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.842464] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[70.842938] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.843271] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[70.844210] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/dds_fastrtps\n'}
+[70.844854] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[70.846133] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[70.848437] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[70.852351] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[70.853161] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.853868] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.854289] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[70.854925] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.855564] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.c\n'}
+[70.856089] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_c.h\n'}
+[70.856497] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.c\n'}
+[70.857482] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_c.h\n'}
+[70.858157] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_c.h\n'}
+[70.858692] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.c\n'}
+[70.860589] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_c.so\n'}
+[70.863780] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[70.864743] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_c.so\n'}
+[70.867629] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_c.so" to ""\n'}
+[70.868326] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs\n'}
+[70.868976] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg\n'}
+[70.869488] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail\n'}
+[70.869966] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__rosidl_typesupport_introspection_cpp.hpp\n'}
+[70.870798] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[70.872181] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__type_support.cpp\n'}
+[70.873493] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/state__type_support.cpp\n'}
+[70.873983] (-) TimerEvent: {}
+[70.876555] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/ir_source_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[70.877259] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/include/wiimote_msgs/wiimote_msgs/msg/detail/timed_switch__type_support.cpp\n'}
+[70.879184] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[70.886655] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[70.887220] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_cpp.so\n'}
+[70.889983] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[70.891511] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.sh\n'}
+[70.892335] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/pythonpath.dsv\n'}
+[70.893081] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info\n'}
+[70.893748] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/SOURCES.txt\n'}
+[70.894115] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/top_level.txt\n'}
+[70.894778] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/PKG-INFO\n'}
+[70.895795] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs-3.3.0-py3.12.egg-info/dependency_links.txt\n'}
+[70.897199] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs\n'}
+[70.897893] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so\n'}
+[70.899641] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[70.901524] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/__init__.py\n'}
+[70.902205] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[70.903060] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg\n'}
+[70.903721] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/__init__.py\n'}
+[70.904785] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_state.py\n'}
+[70.906295] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_ir_source_info.py\n'}
+[70.907515] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_timed_switch.py\n'}
+[70.908726] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_timed_switch_s.c\n'}
+[70.909915] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_state_s.c\n'}
+[70.911237] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_ir_source_info_s.c\n'}
+[70.912473] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[70.914352] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[70.915641] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/_wiimote_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[70.974152] (-) TimerEvent: {}
+[71.074836] (-) TimerEvent: {}
+[71.136129] (wiimote_msgs) StdoutLine: {'line': b"Listing '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs'...\n"}
+[71.137678] (wiimote_msgs) StdoutLine: {'line': b"Listing '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg'...\n"}
+[71.138685] (wiimote_msgs) StdoutLine: {'line': b"Compiling '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/__init__.py'...\n"}
+[71.139870] (wiimote_msgs) StdoutLine: {'line': b"Compiling '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_ir_source_info.py'...\n"}
+[71.141149] (wiimote_msgs) StdoutLine: {'line': b"Compiling '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_state.py'...\n"}
+[71.142146] (wiimote_msgs) StdoutLine: {'line': b"Compiling '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/msg/_timed_switch.py'...\n"}
+[71.172397] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[71.175018] (-) TimerEvent: {}
+[71.175628] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[71.177217] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[71.180663] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[71.184568] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so\n'}
+[71.191559] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages/wiimote_msgs/wiimote_msgs_s__rosidl_typesupport_c.so" to ""\n'}
+[71.192203] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_py.so\n'}
+[71.194530] (wiimote_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/libwiimote_msgs__rosidl_generator_py.so" to ""\n'}
+[71.195462] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.idl\n'}
+[71.196124] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.idl\n'}
+[71.196759] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.idl\n'}
+[71.197347] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/IrSourceInfo.msg\n'}
+[71.198052] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/State.msg\n'}
+[71.198632] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/msg/TimedSwitch.msg\n'}
+[71.199936] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/package_run_dependencies/wiimote_msgs\n'}
+[71.201014] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/parent_prefix_path/wiimote_msgs\n'}
+[71.201706] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.sh\n'}
+[71.202340] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/ament_prefix_path.dsv\n'}
+[71.202831] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/path.sh\n'}
+[71.203198] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/environment/path.dsv\n'}
+[71.203798] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.bash\n'}
+[71.204216] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.sh\n'}
+[71.204828] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.zsh\n'}
+[71.205361] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/local_setup.dsv\n'}
+[71.205860] (wiimote_msgs) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv\n'}
+[71.206280] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/ament_index/resource_index/packages/wiimote_msgs\n'}
+[71.206968] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport.cmake\n'}
+[71.207445] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[71.207983] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[71.208695] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[71.209212] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_cppExport.cmake\n'}
+[71.209684] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[71.210134] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[71.210737] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[71.211300] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[71.212010] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport.cmake\n'}
+[71.212650] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[71.213275] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[71.213939] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[71.214500] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[71.215151] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[71.215812] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport.cmake\n'}
+[71.216463] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/export_wiimote_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[71.217099] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[71.217721] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[71.218240] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[71.218865] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[71.219248] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[71.219800] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[71.220503] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[71.221011] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig.cmake\n'}
+[71.221593] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake/wiimote_msgsConfig-version.cmake\n'}
+[71.222081] (wiimote_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.xml\n'}
+[71.229020] (wiimote_msgs) CommandEnded: {'returncode': 0}
+[71.275168] (-) TimerEvent: {}
+[71.310923] (wiimote_msgs) JobEnded: {'identifier': 'wiimote_msgs', 'rc': 0}
+[71.315361] (wiimote) JobStarted: {'identifier': 'wiimote'}
+[71.363249] (wiimote) JobProgress: {'identifier': 'wiimote', 'progress': 'cmake'}
+[71.366051] (wiimote) JobProgress: {'identifier': 'wiimote', 'progress': 'build'}
+[71.367190] (wiimote) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bmes-endoscope-25/joystick_ws/build/wiimote', '--', '-j4', '-l4'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/wiimote', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/wiimote', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[71.378681] (-) TimerEvent: {}
+[71.480157] (-) TimerEvent: {}
+[71.526070] (wiimote) StdoutLine: {'line': b'-- Found bluetooth library.\n'}
+[71.527121] (wiimote) StdoutLine: {'line': b'-- Found bluetooth header.\n'}
+[71.527911] (wiimote) StdoutLine: {'line': b'-- Found cwiid library.\n'}
+[71.528308] (wiimote) StdoutLine: {'line': b'-- Found cwiid header.\n'}
+[71.528760] (wiimote) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.3 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[71.580304] (-) TimerEvent: {}
+[71.681036] (-) TimerEvent: {}
+[71.781781] (-) TimerEvent: {}
+[71.882696] (-) TimerEvent: {}
+[71.983490] (-) TimerEvent: {}
+[72.084456] (-) TimerEvent: {}
+[72.185326] (-) TimerEvent: {}
+[72.286109] (-) TimerEvent: {}
+[72.386914] (-) TimerEvent: {}
+[72.487732] (-) TimerEvent: {}
+[72.588509] (-) TimerEvent: {}
+[72.689306] (-) TimerEvent: {}
+[72.746337] (wiimote) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.5 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[72.789515] (-) TimerEvent: {}
+[72.890296] (-) TimerEvent: {}
+[72.948946] (wiimote) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[72.990558] (-) TimerEvent: {}
+[73.005758] (wiimote) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.5 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[73.068571] (wiimote) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[73.090786] (-) TimerEvent: {}
+[73.145430] (wiimote) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[73.191005] (-) TimerEvent: {}
+[73.291889] (-) TimerEvent: {}
+[73.356447] (wiimote) StdoutLine: {'line': b'-- Found rclcpp: 28.1.6 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[73.392082] (-) TimerEvent: {}
+[73.492863] (-) TimerEvent: {}
+[73.593650] (-) TimerEvent: {}
+[73.626341] (wiimote) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[73.634578] (wiimote) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[73.693865] (-) TimerEvent: {}
+[73.794713] (-) TimerEvent: {}
+[73.895557] (-) TimerEvent: {}
+[73.982309] (wiimote) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[73.995777] (-) TimerEvent: {}
+[74.096595] (-) TimerEvent: {}
+[74.197518] (-) TimerEvent: {}
+[74.294929] (wiimote) StdoutLine: {'line': b'-- Found rclcpp_components: 28.1.6 (/opt/ros/jazzy/share/rclcpp_components/cmake)\n'}
+[74.297713] (-) TimerEvent: {}
+[74.398512] (-) TimerEvent: {}
+[74.436457] (wiimote) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 28.1.6 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)\n'}
+[74.498747] (-) TimerEvent: {}
+[74.568022] (wiimote) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.5 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[74.598953] (-) TimerEvent: {}
+[74.674565] (wiimote) StdoutLine: {'line': b'-- Found std_srvs: 5.3.5 (/opt/ros/jazzy/share/std_srvs/cmake)\n'}
+[74.699158] (-) TimerEvent: {}
+[74.761634] (wiimote) StdoutLine: {'line': b'-- Found wiimote_msgs: 3.3.0 (/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/cmake)\n'}
+[74.799408] (-) TimerEvent: {}
+[74.851110] (wiimote) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[74.899536] (-) TimerEvent: {}
+[75.000259] (-) TimerEvent: {}
+[75.101026] (-) TimerEvent: {}
+[75.201781] (-) TimerEvent: {}
+[75.302661] (-) TimerEvent: {}
+[75.403767] (-) TimerEvent: {}
+[75.406485] (wiimote) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[75.428093] (wiimote) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[75.429063] (wiimote) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/include>\n'}
+[75.429788] (wiimote) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[75.446103] (wiimote) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[75.446983] (wiimote) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[75.449982] (wiimote) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[75.450718] (wiimote) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[75.455638] (wiimote) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[75.459227] (wiimote) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[75.476079] (wiimote) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[75.476912] (wiimote) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[75.480021] (wiimote) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[75.491606] (wiimote) StdoutLine: {'line': b'-- Configuring done (4.0s)\n'}
+[75.503967] (-) TimerEvent: {}
+[75.604762] (-) TimerEvent: {}
+[75.659864] (wiimote) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[75.702990] (wiimote) StdoutLine: {'line': b'-- Build files have been written to: /home/bmes-endoscope-25/joystick_ws/build/wiimote\n'}
+[75.705022] (-) TimerEvent: {}
+[75.807556] (-) TimerEvent: {}
+[75.908463] (-) TimerEvent: {}
+[75.969604] (wiimote) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/wiimote_controller.cpp.o\x1b[0m\n'}
+[75.997707] (wiimote) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/teleop_wiimote.dir/src/teleop_wiimote.cpp.o\x1b[0m\n'}
+[76.000665] (wiimote) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/teleop_wiimote_node.dir/rclcpp_components/node_main_teleop_wiimote_node.cpp.o\x1b[0m\n'}
+[76.009707] (-) TimerEvent: {}
+[76.025880] (wiimote) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_node.dir/rclcpp_components/node_main_wiimote_node.cpp.o\x1b[0m\n'}
+[76.109908] (-) TimerEvent: {}
+[76.211932] (-) TimerEvent: {}
+[76.313800] (-) TimerEvent: {}
+[76.415766] (-) TimerEvent: {}
+[76.517544] (-) TimerEvent: {}
+[76.619537] (-) TimerEvent: {}
+[76.721594] (-) TimerEvent: {}
+[76.824629] (-) TimerEvent: {}
+[76.925723] (-) TimerEvent: {}
+[77.031566] (-) TimerEvent: {}
+[77.132509] (-) TimerEvent: {}
+[77.233498] (-) TimerEvent: {}
+[77.335932] (-) TimerEvent: {}
+[77.441625] (-) TimerEvent: {}
+[77.542694] (-) TimerEvent: {}
+[77.647539] (-) TimerEvent: {}
+[77.748348] (-) TimerEvent: {}
+[77.849346] (-) TimerEvent: {}
+[77.954747] (-) TimerEvent: {}
+[78.055547] (-) TimerEvent: {}
+[78.161140] (-) TimerEvent: {}
+[78.264594] (-) TimerEvent: {}
+[78.365611] (-) TimerEvent: {}
+[78.466633] (-) TimerEvent: {}
+[78.571782] (-) TimerEvent: {}
+[78.672825] (-) TimerEvent: {}
+[78.781594] (-) TimerEvent: {}
+[78.882822] (-) TimerEvent: {}
+[78.983833] (-) TimerEvent: {}
+[79.089050] (-) TimerEvent: {}
+[79.190237] (-) TimerEvent: {}
+[79.296032] (-) TimerEvent: {}
+[79.400045] (-) TimerEvent: {}
+[79.506682] (-) TimerEvent: {}
+[79.609625] (-) TimerEvent: {}
+[79.710876] (-) TimerEvent: {}
+[79.816632] (-) TimerEvent: {}
+[79.918099] (-) TimerEvent: {}
+[80.021206] (-) TimerEvent: {}
+[80.127014] (-) TimerEvent: {}
+[80.229589] (-) TimerEvent: {}
+[80.331604] (-) TimerEvent: {}
+[80.432582] (-) TimerEvent: {}
+[80.536584] (-) TimerEvent: {}
+[80.637625] (-) TimerEvent: {}
+[80.738719] (-) TimerEvent: {}
+[80.841663] (-) TimerEvent: {}
+[80.942713] (-) TimerEvent: {}
+[81.046646] (-) TimerEvent: {}
+[81.147684] (-) TimerEvent: {}
+[81.248607] (-) TimerEvent: {}
+[81.353000] (-) TimerEvent: {}
+[81.454122] (-) TimerEvent: {}
+[81.555265] (-) TimerEvent: {}
+[81.659639] (-) TimerEvent: {}
+[81.760891] (-) TimerEvent: {}
+[81.864624] (-) TimerEvent: {}
+[81.965741] (-) TimerEvent: {}
+[82.069019] (-) TimerEvent: {}
+[82.172588] (-) TimerEvent: {}
+[82.277049] (-) TimerEvent: {}
+[82.381612] (-) TimerEvent: {}
+[82.482960] (-) TimerEvent: {}
+[82.584110] (-) TimerEvent: {}
+[82.689182] (-) TimerEvent: {}
+[82.791671] (-) TimerEvent: {}
+[82.893630] (-) TimerEvent: {}
+[82.998247] (-) TimerEvent: {}
+[83.099773] (-) TimerEvent: {}
+[83.203309] (-) TimerEvent: {}
+[83.307772] (-) TimerEvent: {}
+[83.409558] (-) TimerEvent: {}
+[83.513960] (-) TimerEvent: {}
+[83.615193] (-) TimerEvent: {}
+[83.716484] (-) TimerEvent: {}
+[83.819646] (-) TimerEvent: {}
+[83.920614] (-) TimerEvent: {}
+[84.022605] (-) TimerEvent: {}
+[84.125617] (-) TimerEvent: {}
+[84.226819] (-) TimerEvent: {}
+[84.328950] (-) TimerEvent: {}
+[84.431648] (-) TimerEvent: {}
+[84.534598] (-) TimerEvent: {}
+[84.635761] (-) TimerEvent: {}
+[84.738646] (-) TimerEvent: {}
+[84.839774] (-) TimerEvent: {}
+[84.942913] (-) TimerEvent: {}
+[85.043970] (-) TimerEvent: {}
+[85.147641] (-) TimerEvent: {}
+[85.248863] (-) TimerEvent: {}
+[85.351974] (-) TimerEvent: {}
+[85.453283] (-) TimerEvent: {}
+[85.555591] (-) TimerEvent: {}
+[85.659590] (-) TimerEvent: {}
+[85.760799] (-) TimerEvent: {}
+[85.864651] (-) TimerEvent: {}
+[85.966112] (-) TimerEvent: {}
+[86.068623] (-) TimerEvent: {}
+[86.169624] (-) TimerEvent: {}
+[86.273113] (-) TimerEvent: {}
+[86.376636] (-) TimerEvent: {}
+[86.477873] (-) TimerEvent: {}
+[86.580641] (-) TimerEvent: {}
+[86.683704] (-) TimerEvent: {}
+[86.787157] (-) TimerEvent: {}
+[86.889604] (-) TimerEvent: {}
+[86.993693] (-) TimerEvent: {}
+[87.094796] (-) TimerEvent: {}
+[87.196905] (-) TimerEvent: {}
+[87.299675] (-) TimerEvent: {}
+[87.405165] (-) TimerEvent: {}
+[87.506226] (-) TimerEvent: {}
+[87.610076] (-) TimerEvent: {}
+[87.716624] (-) TimerEvent: {}
+[87.819638] (-) TimerEvent: {}
+[87.922637] (-) TimerEvent: {}
+[88.023800] (-) TimerEvent: {}
+[88.127057] (-) TimerEvent: {}
+[88.232131] (-) TimerEvent: {}
+[88.337064] (-) TimerEvent: {}
+[88.442089] (-) TimerEvent: {}
+[88.545923] (-) TimerEvent: {}
+[88.649603] (-) TimerEvent: {}
+[88.750926] (-) TimerEvent: {}
+[88.857920] (-) TimerEvent: {}
+[88.962063] (-) TimerEvent: {}
+[89.063135] (-) TimerEvent: {}
+[89.167002] (-) TimerEvent: {}
+[89.268210] (-) TimerEvent: {}
+[89.372149] (-) TimerEvent: {}
+[89.477949] (-) TimerEvent: {}
+[89.579196] (-) TimerEvent: {}
+[89.683029] (-) TimerEvent: {}
+[89.789063] (-) TimerEvent: {}
+[89.892591] (-) TimerEvent: {}
+[89.995600] (-) TimerEvent: {}
+[90.096621] (-) TimerEvent: {}
+[90.198589] (-) TimerEvent: {}
+[90.302896] (-) TimerEvent: {}
+[90.404074] (-) TimerEvent: {}
+[90.508069] (-) TimerEvent: {}
+[90.609425] (-) TimerEvent: {}
+[90.711608] (-) TimerEvent: {}
+[90.814608] (-) TimerEvent: {}
+[90.917632] (-) TimerEvent: {}
+[91.018623] (-) TimerEvent: {}
+[91.123610] (-) TimerEvent: {}
+[91.224604] (-) TimerEvent: {}
+[91.325614] (-) TimerEvent: {}
+[91.430203] (-) TimerEvent: {}
+[91.531304] (-) TimerEvent: {}
+[91.633657] (-) TimerEvent: {}
+[91.740059] (-) TimerEvent: {}
+[91.841287] (-) TimerEvent: {}
+[91.946614] (-) TimerEvent: {}
+[92.049607] (-) TimerEvent: {}
+[92.152611] (-) TimerEvent: {}
+[92.253740] (-) TimerEvent: {}
+[92.354835] (-) TimerEvent: {}
+[92.458599] (-) TimerEvent: {}
+[92.560622] (-) TimerEvent: {}
+[92.662608] (-) TimerEvent: {}
+[92.765091] (-) TimerEvent: {}
+[92.867906] (-) TimerEvent: {}
+[92.971173] (-) TimerEvent: {}
+[93.075589] (-) TimerEvent: {}
+[93.176568] (-) TimerEvent: {}
+[93.278592] (-) TimerEvent: {}
+[93.383007] (-) TimerEvent: {}
+[93.484256] (-) TimerEvent: {}
+[93.585489] (-) TimerEvent: {}
+[93.691602] (-) TimerEvent: {}
+[93.792797] (-) TimerEvent: {}
+[93.896615] (-) TimerEvent: {}
+[93.997739] (-) TimerEvent: {}
+[94.104613] (-) TimerEvent: {}
+[94.205642] (-) TimerEvent: {}
+[94.307043] (-) TimerEvent: {}
+[94.412270] (-) TimerEvent: {}
+[94.513354] (-) TimerEvent: {}
+[94.618033] (-) TimerEvent: {}
+[94.720587] (-) TimerEvent: {}
+[94.824605] (-) TimerEvent: {}
+[94.927630] (-) TimerEvent: {}
+[95.028950] (-) TimerEvent: {}
+[95.132627] (-) TimerEvent: {}
+[95.236596] (-) TimerEvent: {}
+[95.337743] (-) TimerEvent: {}
+[95.441589] (-) TimerEvent: {}
+[95.542751] (-) TimerEvent: {}
+[95.647910] (-) TimerEvent: {}
+[95.749068] (-) TimerEvent: {}
+[95.854617] (-) TimerEvent: {}
+[95.959080] (-) TimerEvent: {}
+[96.061608] (-) TimerEvent: {}
+[96.168617] (-) TimerEvent: {}
+[96.269623] (-) TimerEvent: {}
+[96.370616] (-) TimerEvent: {}
+[96.473048] (-) TimerEvent: {}
+[96.578604] (-) TimerEvent: {}
+[96.683078] (-) TimerEvent: {}
+[96.786608] (-) TimerEvent: {}
+[96.889610] (-) TimerEvent: {}
+[96.990620] (-) TimerEvent: {}
+[97.091696] (-) TimerEvent: {}
+[97.195593] (-) TimerEvent: {}
+[97.296706] (-) TimerEvent: {}
+[97.398621] (-) TimerEvent: {}
+[97.502637] (-) TimerEvent: {}
+[97.609059] (-) TimerEvent: {}
+[97.712580] (-) TimerEvent: {}
+[97.813610] (-) TimerEvent: {}
+[97.914597] (-) TimerEvent: {}
+[98.018055] (-) TimerEvent: {}
+[98.119211] (-) TimerEvent: {}
+[98.222605] (-) TimerEvent: {}
+[98.325625] (-) TimerEvent: {}
+[98.428602] (-) TimerEvent: {}
+[98.529588] (-) TimerEvent: {}
+[98.633610] (-) TimerEvent: {}
+[98.734611] (-) TimerEvent: {}
+[98.839066] (-) TimerEvent: {}
+[98.940430] (-) TimerEvent: {}
+[99.046061] (-) TimerEvent: {}
+[99.149582] (-) TimerEvent: {}
+[99.250615] (-) TimerEvent: {}
+[99.351625] (-) TimerEvent: {}
+[99.456139] (-) TimerEvent: {}
+[99.559877] (-) TimerEvent: {}
+[99.666179] (-) TimerEvent: {}
+[99.767609] (-) TimerEvent: {}
+[99.869663] (-) TimerEvent: {}
+[99.974065] (-) TimerEvent: {}
+[100.076972] (-) TimerEvent: {}
+[100.180037] (-) TimerEvent: {}
+[100.281256] (-) TimerEvent: {}
+[100.385161] (-) TimerEvent: {}
+[100.490590] (-) TimerEvent: {}
+[100.591759] (-) TimerEvent: {}
+[100.692703] (-) TimerEvent: {}
+[100.796628] (-) TimerEvent: {}
+[100.897616] (-) TimerEvent: {}
+[101.000595] (-) TimerEvent: {}
+[101.103604] (-) TimerEvent: {}
+[101.206592] (-) TimerEvent: {}
+[101.307613] (-) TimerEvent: {}
+[101.414021] (-) TimerEvent: {}
+[101.515043] (-) TimerEvent: {}
+[101.618825] (-) TimerEvent: {}
+[101.719948] (-) TimerEvent: {}
+[101.822600] (-) TimerEvent: {}
+[101.927030] (-) TimerEvent: {}
+[102.032593] (-) TimerEvent: {}
+[102.133684] (-) TimerEvent: {}
+[102.237596] (-) TimerEvent: {}
+[102.338620] (-) TimerEvent: {}
+[102.441923] (-) TimerEvent: {}
+[102.543156] (-) TimerEvent: {}
+[102.648643] (-) TimerEvent: {}
+[102.752611] (-) TimerEvent: {}
+[102.853784] (-) TimerEvent: {}
+[102.958199] (-) TimerEvent: {}
+[103.062952] (-) TimerEvent: {}
+[103.165609] (-) TimerEvent: {}
+[103.269606] (-) TimerEvent: {}
+[103.370917] (-) TimerEvent: {}
+[103.477633] (-) TimerEvent: {}
+[103.582607] (-) TimerEvent: {}
+[103.683715] (-) TimerEvent: {}
+[103.789105] (-) TimerEvent: {}
+[103.894645] (-) TimerEvent: {}
+[103.995807] (-) TimerEvent: {}
+[104.098957] (-) TimerEvent: {}
+[104.200073] (-) TimerEvent: {}
+[104.303629] (-) TimerEvent: {}
+[104.406605] (-) TimerEvent: {}
+[104.507767] (-) TimerEvent: {}
+[104.614049] (-) TimerEvent: {}
+[104.715122] (-) TimerEvent: {}
+[104.818051] (-) TimerEvent: {}
+[104.922599] (-) TimerEvent: {}
+[105.026603] (-) TimerEvent: {}
+[105.127577] (-) TimerEvent: {}
+[105.228625] (-) TimerEvent: {}
+[105.333078] (-) TimerEvent: {}
+[105.435642] (-) TimerEvent: {}
+[105.540030] (-) TimerEvent: {}
+[105.644814] (-) TimerEvent: {}
+[105.745951] (-) TimerEvent: {}
+[105.848331] (-) TimerEvent: {}
+[105.914593] (wiimote) StdoutLine: {'line': b'[ 55%] \x1b[32m\x1b[1mLinking CXX executable wiimote_node\x1b[0m\n'}
+[105.951593] (-) TimerEvent: {}
+[106.052645] (-) TimerEvent: {}
+[106.155138] (-) TimerEvent: {}
+[106.257659] (-) TimerEvent: {}
+[106.362068] (-) TimerEvent: {}
+[106.468587] (-) TimerEvent: {}
+[106.569637] (-) TimerEvent: {}
+[106.670648] (-) TimerEvent: {}
+[106.774576] (-) TimerEvent: {}
+[106.877621] (-) TimerEvent: {}
+[106.978637] (-) TimerEvent: {}
+[107.085019] (-) TimerEvent: {}
+[107.186142] (-) TimerEvent: {}
+[107.291142] (-) TimerEvent: {}
+[107.392343] (-) TimerEvent: {}
+[107.494604] (-) TimerEvent: {}
+[107.502506] (wiimote) StdoutLine: {'line': b'[ 55%] Built target wiimote_node\n'}
+[107.594886] (-) TimerEvent: {}
+[107.697666] (-) TimerEvent: {}
+[107.800610] (-) TimerEvent: {}
+[107.901614] (-) TimerEvent: {}
+[108.005119] (-) TimerEvent: {}
+[108.106241] (-) TimerEvent: {}
+[108.209583] (-) TimerEvent: {}
+[108.310694] (-) TimerEvent: {}
+[108.414604] (-) TimerEvent: {}
+[108.467031] (wiimote) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable teleop_wiimote_node\x1b[0m\n'}
+[108.516574] (-) TimerEvent: {}
+[108.617780] (-) TimerEvent: {}
+[108.720280] (-) TimerEvent: {}
+[108.824637] (-) TimerEvent: {}
+[108.926133] (-) TimerEvent: {}
+[109.032218] (-) TimerEvent: {}
+[109.133536] (-) TimerEvent: {}
+[109.236600] (-) TimerEvent: {}
+[109.337849] (-) TimerEvent: {}
+[109.441151] (-) TimerEvent: {}
+[109.544080] (-) TimerEvent: {}
+[109.619994] (wiimote) StdoutLine: {'line': b'[ 66%] Built target teleop_wiimote_node\n'}
+[109.644444] (-) TimerEvent: {}
+[109.749148] (-) TimerEvent: {}
+[109.854870] (-) TimerEvent: {}
+[109.956667] (-) TimerEvent: {}
+[110.057732] (-) TimerEvent: {}
+[110.158775] (-) TimerEvent: {}
+[110.262886] (-) TimerEvent: {}
+[110.363925] (-) TimerEvent: {}
+[110.467881] (-) TimerEvent: {}
+[110.568870] (-) TimerEvent: {}
+[110.669956] (-) TimerEvent: {}
+[110.771019] (-) TimerEvent: {}
+[110.872073] (-) TimerEvent: {}
+[110.973146] (-) TimerEvent: {}
+[111.074217] (-) TimerEvent: {}
+[111.175323] (-) TimerEvent: {}
+[111.276691] (-) TimerEvent: {}
+[111.377566] (-) TimerEvent: {}
+[111.478500] (-) TimerEvent: {}
+[111.579425] (-) TimerEvent: {}
+[111.680340] (-) TimerEvent: {}
+[111.781480] (-) TimerEvent: {}
+[111.882490] (-) TimerEvent: {}
+[111.983356] (-) TimerEvent: {}
+[112.084339] (-) TimerEvent: {}
+[112.185352] (-) TimerEvent: {}
+[112.286481] (-) TimerEvent: {}
+[112.387535] (-) TimerEvent: {}
+[112.488587] (-) TimerEvent: {}
+[112.589585] (-) TimerEvent: {}
+[112.690564] (-) TimerEvent: {}
+[112.792354] (-) TimerEvent: {}
+[112.893500] (-) TimerEvent: {}
+[112.994499] (-) TimerEvent: {}
+[113.095564] (-) TimerEvent: {}
+[113.196724] (-) TimerEvent: {}
+[113.298317] (-) TimerEvent: {}
+[113.399429] (-) TimerEvent: {}
+[113.500341] (-) TimerEvent: {}
+[113.601433] (-) TimerEvent: {}
+[113.702444] (-) TimerEvent: {}
+[113.803438] (-) TimerEvent: {}
+[113.904468] (-) TimerEvent: {}
+[114.005494] (-) TimerEvent: {}
+[114.106482] (-) TimerEvent: {}
+[114.207562] (-) TimerEvent: {}
+[114.311911] (-) TimerEvent: {}
+[114.412909] (-) TimerEvent: {}
+[114.516874] (-) TimerEvent: {}
+[114.617881] (-) TimerEvent: {}
+[114.718914] (-) TimerEvent: {}
+[114.820007] (-) TimerEvent: {}
+[114.921478] (-) TimerEvent: {}
+[115.022518] (-) TimerEvent: {}
+[115.123519] (-) TimerEvent: {}
+[115.224575] (-) TimerEvent: {}
+[115.325562] (-) TimerEvent: {}
+[115.426602] (-) TimerEvent: {}
+[115.527681] (-) TimerEvent: {}
+[115.629000] (-) TimerEvent: {}
+[115.730177] (-) TimerEvent: {}
+[115.831507] (-) TimerEvent: {}
+[115.932828] (-) TimerEvent: {}
+[116.034103] (-) TimerEvent: {}
+[116.135161] (-) TimerEvent: {}
+[116.236178] (-) TimerEvent: {}
+[116.337264] (-) TimerEvent: {}
+[116.438322] (-) TimerEvent: {}
+[116.539363] (-) TimerEvent: {}
+[116.640437] (-) TimerEvent: {}
+[116.741476] (-) TimerEvent: {}
+[116.842621] (-) TimerEvent: {}
+[116.943741] (-) TimerEvent: {}
+[117.044758] (-) TimerEvent: {}
+[117.145737] (-) TimerEvent: {}
+[117.246819] (-) TimerEvent: {}
+[117.347844] (-) TimerEvent: {}
+[117.450634] (-) TimerEvent: {}
+[117.551597] (-) TimerEvent: {}
+[117.652606] (-) TimerEvent: {}
+[117.754770] (-) TimerEvent: {}
+[117.857602] (-) TimerEvent: {}
+[117.958695] (-) TimerEvent: {}
+[118.062839] (-) TimerEvent: {}
+[118.163902] (-) TimerEvent: {}
+[118.270845] (-) TimerEvent: {}
+[118.374955] (-) TimerEvent: {}
+[118.478622] (-) TimerEvent: {}
+[118.579627] (-) TimerEvent: {}
+[118.680648] (-) TimerEvent: {}
+[118.783611] (-) TimerEvent: {}
+[118.884589] (-) TimerEvent: {}
+[118.986583] (-) TimerEvent: {}
+[119.087583] (-) TimerEvent: {}
+[119.190567] (-) TimerEvent: {}
+[119.292598] (-) TimerEvent: {}
+[119.393537] (-) TimerEvent: {}
+[119.497136] (-) TimerEvent: {}
+[119.598453] (-) TimerEvent: {}
+[119.702119] (-) TimerEvent: {}
+[119.803336] (-) TimerEvent: {}
+[119.907103] (-) TimerEvent: {}
+[120.009589] (-) TimerEvent: {}
+[120.111583] (-) TimerEvent: {}
+[120.212546] (-) TimerEvent: {}
+[120.315573] (-) TimerEvent: {}
+[120.416578] (-) TimerEvent: {}
+[120.518585] (-) TimerEvent: {}
+[120.620594] (-) TimerEvent: {}
+[120.721530] (-) TimerEvent: {}
+[120.824118] (-) TimerEvent: {}
+[120.925966] (-) TimerEvent: {}
+[121.031139] (-) TimerEvent: {}
+[121.135021] (-) TimerEvent: {}
+[121.238611] (-) TimerEvent: {}
+[121.342624] (-) TimerEvent: {}
+[121.443775] (-) TimerEvent: {}
+[121.544605] (-) TimerEvent: {}
+[121.645614] (-) TimerEvent: {}
+[121.748938] (-) TimerEvent: {}
+[121.849921] (-) TimerEvent: {}
+[121.953888] (-) TimerEvent: {}
+[122.054888] (-) TimerEvent: {}
+[122.155908] (-) TimerEvent: {}
+[122.256923] (-) TimerEvent: {}
+[122.357961] (-) TimerEvent: {}
+[122.458972] (-) TimerEvent: {}
+[122.560008] (-) TimerEvent: {}
+[122.661117] (-) TimerEvent: {}
+[122.762275] (-) TimerEvent: {}
+[122.863435] (-) TimerEvent: {}
+[122.974470] (-) TimerEvent: {}
+[123.076356] (-) TimerEvent: {}
+[123.178124] (-) TimerEvent: {}
+[123.279612] (-) TimerEvent: {}
+[123.380575] (-) TimerEvent: {}
+[123.481569] (-) TimerEvent: {}
+[123.582539] (-) TimerEvent: {}
+[123.683456] (-) TimerEvent: {}
+[123.784425] (-) TimerEvent: {}
+[123.885348] (-) TimerEvent: {}
+[123.986441] (-) TimerEvent: {}
+[124.087440] (-) TimerEvent: {}
+[124.188340] (-) TimerEvent: {}
+[124.289421] (-) TimerEvent: {}
+[124.390430] (-) TimerEvent: {}
+[124.491326] (-) TimerEvent: {}
+[124.592293] (-) TimerEvent: {}
+[124.693302] (-) TimerEvent: {}
+[124.794335] (-) TimerEvent: {}
+[124.895339] (-) TimerEvent: {}
+[124.996619] (-) TimerEvent: {}
+[125.100902] (-) TimerEvent: {}
+[125.201975] (-) TimerEvent: {}
+[125.303048] (-) TimerEvent: {}
+[125.404098] (-) TimerEvent: {}
+[125.505150] (-) TimerEvent: {}
+[125.606176] (-) TimerEvent: {}
+[125.707224] (-) TimerEvent: {}
+[125.808271] (-) TimerEvent: {}
+[125.909456] (-) TimerEvent: {}
+[126.010724] (-) TimerEvent: {}
+[126.112634] (-) TimerEvent: {}
+[126.213956] (-) TimerEvent: {}
+[126.315483] (-) TimerEvent: {}
+[126.417013] (-) TimerEvent: {}
+[126.518714] (-) TimerEvent: {}
+[126.624150] (-) TimerEvent: {}
+[126.725515] (-) TimerEvent: {}
+[126.827099] (-) TimerEvent: {}
+[126.931974] (-) TimerEvent: {}
+[127.033524] (-) TimerEvent: {}
+[127.137968] (-) TimerEvent: {}
+[127.239143] (-) TimerEvent: {}
+[127.340179] (-) TimerEvent: {}
+[127.442910] (-) TimerEvent: {}
+[127.546918] (-) TimerEvent: {}
+[127.647939] (-) TimerEvent: {}
+[127.749194] (-) TimerEvent: {}
+[127.852895] (-) TimerEvent: {}
+[127.953807] (-) TimerEvent: {}
+[128.054847] (-) TimerEvent: {}
+[128.155948] (-) TimerEvent: {}
+[128.256905] (-) TimerEvent: {}
+[128.357812] (-) TimerEvent: {}
+[128.458846] (-) TimerEvent: {}
+[128.559879] (-) TimerEvent: {}
+[128.660864] (-) TimerEvent: {}
+[128.761874] (-) TimerEvent: {}
+[128.865878] (-) TimerEvent: {}
+[128.968961] (-) TimerEvent: {}
+[129.069961] (-) TimerEvent: {}
+[129.170997] (-) TimerEvent: {}
+[129.274936] (-) TimerEvent: {}
+[129.376315] (-) TimerEvent: {}
+[129.477455] (-) TimerEvent: {}
+[129.578576] (-) TimerEvent: {}
+[129.681571] (-) TimerEvent: {}
+[129.785866] (-) TimerEvent: {}
+[129.886856] (-) TimerEvent: {}
+[129.988140] (-) TimerEvent: {}
+[130.089064] (-) TimerEvent: {}
+[130.190152] (-) TimerEvent: {}
+[130.291122] (-) TimerEvent: {}
+[130.392192] (-) TimerEvent: {}
+[130.495879] (-) TimerEvent: {}
+[130.597019] (-) TimerEvent: {}
+[130.700838] (-) TimerEvent: {}
+[130.804868] (-) TimerEvent: {}
+[130.906067] (-) TimerEvent: {}
+[131.007264] (-) TimerEvent: {}
+[131.108425] (-) TimerEvent: {}
+[131.209525] (-) TimerEvent: {}
+[131.310571] (-) TimerEvent: {}
+[131.414844] (-) TimerEvent: {}
+[131.515847] (-) TimerEvent: {}
+[131.616837] (-) TimerEvent: {}
+[131.717830] (-) TimerEvent: {}
+[131.821903] (-) TimerEvent: {}
+[131.922970] (-) TimerEvent: {}
+[132.026906] (-) TimerEvent: {}
+[132.127970] (-) TimerEvent: {}
+[132.229297] (-) TimerEvent: {}
+[132.332899] (-) TimerEvent: {}
+[132.433970] (-) TimerEvent: {}
+[132.535123] (-) TimerEvent: {}
+[132.637459] (-) TimerEvent: {}
+[132.738607] (-) TimerEvent: {}
+[132.842855] (-) TimerEvent: {}
+[132.946903] (-) TimerEvent: {}
+[133.050629] (-) TimerEvent: {}
+[133.151860] (-) TimerEvent: {}
+[133.252931] (-) TimerEvent: {}
+[133.354144] (-) TimerEvent: {}
+[133.455308] (-) TimerEvent: {}
+[133.556358] (-) TimerEvent: {}
+[133.657458] (-) TimerEvent: {}
+[133.758485] (-) TimerEvent: {}
+[133.859561] (-) TimerEvent: {}
+[133.960684] (-) TimerEvent: {}
+[134.064079] (-) TimerEvent: {}
+[134.165192] (-) TimerEvent: {}
+[134.266356] (-) TimerEvent: {}
+[134.370928] (-) TimerEvent: {}
+[134.474909] (-) TimerEvent: {}
+[134.578898] (-) TimerEvent: {}
+[134.679971] (-) TimerEvent: {}
+[134.781137] (-) TimerEvent: {}
+[134.882129] (-) TimerEvent: {}
+[134.983135] (-) TimerEvent: {}
+[135.084190] (-) TimerEvent: {}
+[135.185103] (-) TimerEvent: {}
+[135.286202] (-) TimerEvent: {}
+[135.390955] (-) TimerEvent: {}
+[135.494944] (-) TimerEvent: {}
+[135.595979] (-) TimerEvent: {}
+[135.697018] (-) TimerEvent: {}
+[135.800586] (-) TimerEvent: {}
+[135.901569] (-) TimerEvent: {}
+[136.002680] (-) TimerEvent: {}
+[136.103678] (-) TimerEvent: {}
+[136.207201] (-) TimerEvent: {}
+[136.308199] (-) TimerEvent: {}
+[136.410924] (-) TimerEvent: {}
+[136.511877] (-) TimerEvent: {}
+[136.615915] (-) TimerEvent: {}
+[136.719936] (-) TimerEvent: {}
+[136.820915] (-) TimerEvent: {}
+[136.921914] (-) TimerEvent: {}
+[137.022899] (-) TimerEvent: {}
+[137.123921] (-) TimerEvent: {}
+[137.224990] (-) TimerEvent: {}
+[137.325947] (-) TimerEvent: {}
+[137.429679] (-) TimerEvent: {}
+[137.530794] (-) TimerEvent: {}
+[137.633920] (-) TimerEvent: {}
+[137.734940] (-) TimerEvent: {}
+[137.836580] (-) TimerEvent: {}
+[137.941033] (-) TimerEvent: {}
+[138.042286] (-) TimerEvent: {}
+[138.143591] (-) TimerEvent: {}
+[138.245456] (-) TimerEvent: {}
+[138.346784] (-) TimerEvent: {}
+[138.448130] (-) TimerEvent: {}
+[138.549229] (-) TimerEvent: {}
+[138.650131] (-) TimerEvent: {}
+[138.655089] (joy) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libgame_controller.so\x1b[0m\n'}
+[138.750483] (-) TimerEvent: {}
+[138.855002] (-) TimerEvent: {}
+[138.956310] (-) TimerEvent: {}
+[139.060947] (-) TimerEvent: {}
+[139.162524] (-) TimerEvent: {}
+[139.264010] (-) TimerEvent: {}
+[139.365458] (-) TimerEvent: {}
+[139.470187] (-) TimerEvent: {}
+[139.574676] (-) TimerEvent: {}
+[139.679007] (-) TimerEvent: {}
+[139.781992] (-) TimerEvent: {}
+[139.883359] (-) TimerEvent: {}
+[139.987131] (-) TimerEvent: {}
+[140.088203] (-) TimerEvent: {}
+[140.189618] (-) TimerEvent: {}
+[140.293095] (-) TimerEvent: {}
+[140.394193] (-) TimerEvent: {}
+[140.497947] (-) TimerEvent: {}
+[140.598957] (-) TimerEvent: {}
+[140.700032] (-) TimerEvent: {}
+[140.801190] (-) TimerEvent: {}
+[140.902463] (-) TimerEvent: {}
+[141.004840] (-) TimerEvent: {}
+[141.105810] (-) TimerEvent: {}
+[141.173509] (joy) StdoutLine: {'line': b'[100%] Built target game_controller\n'}
+[141.206150] (-) TimerEvent: {}
+[141.250869] (joy) CommandEnded: {'returncode': 0}
+[141.254780] (joy) JobProgress: {'identifier': 'joy', 'progress': 'install'}
+[141.259046] (joy) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/joy'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/joy', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/joy', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[141.306359] (-) TimerEvent: {}
+[141.313982] (joy) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[141.320184] (joy) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy/lib/libjoy.so\n'}
+[141.365239] (joy) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/joy/lib/libjoy.so" to ""\n'}
+[141.366730] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/lib/joy/joy_node\n'}
+[141.369490] (joy) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy/lib/libgame_controller.so\n'}
+[141.406600] (-) TimerEvent: {}
+[141.419337] (joy) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/joy/lib/libgame_controller.so" to ""\n'}
+[141.428583] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/lib/joy/game_controller_node\n'}
+[141.433903] (joy) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy/lib/joy/joy_enumerate_devices\n'}
+[141.436287] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/include/joy\n'}
+[141.437806] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/include/joy/joy\n'}
+[141.438933] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/include/joy/joy/game_controller.hpp\n'}
+[141.439977] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/include/joy/joy/joy.hpp\n'}
+[141.441176] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/config\n'}
+[141.443719] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/config/joy-params.yaml\n'}
+[141.445151] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/launch\n'}
+[141.446753] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/launch/joy-launch.py\n'}
+[141.447890] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/launch/joy-composed-launch.py\n'}
+[141.449117] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/ament_index/resource_index/package_run_dependencies/joy\n'}
+[141.450277] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/ament_index/resource_index/parent_prefix_path/joy\n'}
+[141.451403] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/environment/ament_prefix_path.sh\n'}
+[141.454330] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/environment/ament_prefix_path.dsv\n'}
+[141.457243] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/environment/path.sh\n'}
+[141.457905] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/environment/path.dsv\n'}
+[141.458776] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/local_setup.bash\n'}
+[141.463968] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/local_setup.sh\n'}
+[141.464648] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/local_setup.zsh\n'}
+[141.465226] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/local_setup.dsv\n'}
+[141.465830] (joy) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.dsv\n'}
+[141.466559] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/ament_index/resource_index/packages/joy\n'}
+[141.467771] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/ament_index/resource_index/rclcpp_components/joy\n'}
+[141.469314] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/export_joyExport.cmake\n'}
+[141.470434] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/export_joyExport-noconfig.cmake\n'}
+[141.471360] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/export_game_controllerExport.cmake\n'}
+[141.472247] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/export_game_controllerExport-noconfig.cmake\n'}
+[141.473154] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[141.473860] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[141.474720] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/joyConfig.cmake\n'}
+[141.475248] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/cmake/joyConfig-version.cmake\n'}
+[141.476130] (joy) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.xml\n'}
+[141.476950] (joy) CommandEnded: {'returncode': 0}
+[141.507475] (-) TimerEvent: {}
+[141.570926] (joy) JobEnded: {'identifier': 'joy', 'rc': 0}
+[141.607880] (-) TimerEvent: {}
+[141.708711] (-) TimerEvent: {}
+[141.809715] (-) TimerEvent: {}
+[141.913952] (-) TimerEvent: {}
+[142.014832] (-) TimerEvent: {}
+[142.115637] (-) TimerEvent: {}
+[142.216419] (-) TimerEvent: {}
+[142.317210] (-) TimerEvent: {}
+[142.418008] (-) TimerEvent: {}
+[142.518849] (-) TimerEvent: {}
+[142.619673] (-) TimerEvent: {}
+[142.720511] (-) TimerEvent: {}
+[142.821329] (-) TimerEvent: {}
+[142.922217] (-) TimerEvent: {}
+[143.025060] (-) TimerEvent: {}
+[143.125909] (-) TimerEvent: {}
+[143.226766] (-) TimerEvent: {}
+[143.327587] (-) TimerEvent: {}
+[143.428325] (-) TimerEvent: {}
+[143.529227] (-) TimerEvent: {}
+[143.630177] (-) TimerEvent: {}
+[143.731088] (-) TimerEvent: {}
+[143.831906] (-) TimerEvent: {}
+[143.932714] (-) TimerEvent: {}
+[144.033523] (-) TimerEvent: {}
+[144.134942] (-) TimerEvent: {}
+[144.235760] (-) TimerEvent: {}
+[144.336569] (-) TimerEvent: {}
+[144.437484] (-) TimerEvent: {}
+[144.538353] (-) TimerEvent: {}
+[144.639175] (-) TimerEvent: {}
+[144.740056] (-) TimerEvent: {}
+[144.840969] (-) TimerEvent: {}
+[144.941818] (-) TimerEvent: {}
+[145.042596] (-) TimerEvent: {}
+[145.143489] (-) TimerEvent: {}
+[145.244247] (-) TimerEvent: {}
+[145.345121] (-) TimerEvent: {}
+[145.445978] (-) TimerEvent: {}
+[145.546860] (-) TimerEvent: {}
+[145.647683] (-) TimerEvent: {}
+[145.748513] (-) TimerEvent: {}
+[145.849297] (-) TimerEvent: {}
+[145.950079] (-) TimerEvent: {}
+[146.050875] (-) TimerEvent: {}
+[146.151710] (-) TimerEvent: {}
+[146.252511] (-) TimerEvent: {}
+[146.353289] (-) TimerEvent: {}
+[146.454085] (-) TimerEvent: {}
+[146.554944] (-) TimerEvent: {}
+[146.655797] (-) TimerEvent: {}
+[146.756556] (-) TimerEvent: {}
+[146.857451] (-) TimerEvent: {}
+[146.958230] (-) TimerEvent: {}
+[147.059120] (-) TimerEvent: {}
+[147.160057] (-) TimerEvent: {}
+[147.261437] (-) TimerEvent: {}
+[147.362241] (-) TimerEvent: {}
+[147.463033] (-) TimerEvent: {}
+[147.563871] (-) TimerEvent: {}
+[147.664793] (-) TimerEvent: {}
+[147.765586] (-) TimerEvent: {}
+[147.866347] (-) TimerEvent: {}
+[147.967142] (-) TimerEvent: {}
+[148.068009] (-) TimerEvent: {}
+[148.168841] (-) TimerEvent: {}
+[148.269686] (-) TimerEvent: {}
+[148.370497] (-) TimerEvent: {}
+[148.471285] (-) TimerEvent: {}
+[148.572124] (-) TimerEvent: {}
+[148.673005] (-) TimerEvent: {}
+[148.773810] (-) TimerEvent: {}
+[148.874763] (-) TimerEvent: {}
+[148.975537] (-) TimerEvent: {}
+[149.076326] (-) TimerEvent: {}
+[149.177175] (-) TimerEvent: {}
+[149.278028] (-) TimerEvent: {}
+[149.378898] (-) TimerEvent: {}
+[149.479784] (-) TimerEvent: {}
+[149.580589] (-) TimerEvent: {}
+[149.681427] (-) TimerEvent: {}
+[149.782214] (-) TimerEvent: {}
+[149.883034] (-) TimerEvent: {}
+[149.983854] (-) TimerEvent: {}
+[150.084616] (-) TimerEvent: {}
+[150.185329] (-) TimerEvent: {}
+[150.286148] (-) TimerEvent: {}
+[150.386972] (-) TimerEvent: {}
+[150.487814] (-) TimerEvent: {}
+[150.588672] (-) TimerEvent: {}
+[150.689511] (-) TimerEvent: {}
+[150.790263] (-) TimerEvent: {}
+[150.891124] (-) TimerEvent: {}
+[150.991953] (-) TimerEvent: {}
+[151.092792] (-) TimerEvent: {}
+[151.193557] (-) TimerEvent: {}
+[151.294351] (-) TimerEvent: {}
+[151.395170] (-) TimerEvent: {}
+[151.496027] (-) TimerEvent: {}
+[151.596868] (-) TimerEvent: {}
+[151.697555] (-) TimerEvent: {}
+[151.798193] (-) TimerEvent: {}
+[151.898953] (-) TimerEvent: {}
+[151.999607] (-) TimerEvent: {}
+[152.100274] (-) TimerEvent: {}
+[152.201298] (-) TimerEvent: {}
+[152.302430] (-) TimerEvent: {}
+[152.403124] (-) TimerEvent: {}
+[152.503941] (-) TimerEvent: {}
+[152.604806] (-) TimerEvent: {}
+[152.705577] (-) TimerEvent: {}
+[152.806328] (-) TimerEvent: {}
+[152.907137] (-) TimerEvent: {}
+[153.007933] (-) TimerEvent: {}
+[153.108709] (-) TimerEvent: {}
+[153.209443] (-) TimerEvent: {}
+[153.310157] (-) TimerEvent: {}
+[153.410954] (-) TimerEvent: {}
+[153.511787] (-) TimerEvent: {}
+[153.612540] (-) TimerEvent: {}
+[153.713233] (-) TimerEvent: {}
+[153.813981] (-) TimerEvent: {}
+[153.914746] (-) TimerEvent: {}
+[154.015475] (-) TimerEvent: {}
+[154.116151] (-) TimerEvent: {}
+[154.216896] (-) TimerEvent: {}
+[154.317593] (-) TimerEvent: {}
+[154.418340] (-) TimerEvent: {}
+[154.519280] (-) TimerEvent: {}
+[154.620080] (-) TimerEvent: {}
+[154.720925] (-) TimerEvent: {}
+[154.821778] (-) TimerEvent: {}
+[154.922556] (-) TimerEvent: {}
+[155.023298] (-) TimerEvent: {}
+[155.124271] (-) TimerEvent: {}
+[155.225976] (-) TimerEvent: {}
+[155.328501] (-) TimerEvent: {}
+[155.429594] (-) TimerEvent: {}
+[155.530543] (-) TimerEvent: {}
+[155.631463] (-) TimerEvent: {}
+[155.732433] (-) TimerEvent: {}
+[155.833496] (-) TimerEvent: {}
+[155.934456] (-) TimerEvent: {}
+[156.035528] (-) TimerEvent: {}
+[156.136667] (-) TimerEvent: {}
+[156.237462] (-) TimerEvent: {}
+[156.325060] (wiimote) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libteleop_wiimote.so\x1b[0m\n'}
+[156.337663] (-) TimerEvent: {}
+[156.438526] (-) TimerEvent: {}
+[156.539444] (-) TimerEvent: {}
+[156.640440] (-) TimerEvent: {}
+[156.741345] (-) TimerEvent: {}
+[156.842532] (-) TimerEvent: {}
+[156.944028] (-) TimerEvent: {}
+[157.044927] (-) TimerEvent: {}
+[157.146014] (-) TimerEvent: {}
+[157.247549] (-) TimerEvent: {}
+[157.348544] (-) TimerEvent: {}
+[157.449444] (-) TimerEvent: {}
+[157.550944] (-) TimerEvent: {}
+[157.652356] (-) TimerEvent: {}
+[157.753590] (-) TimerEvent: {}
+[157.855770] (-) TimerEvent: {}
+[157.958833] (-) TimerEvent: {}
+[158.061747] (-) TimerEvent: {}
+[158.163956] (-) TimerEvent: {}
+[158.265229] (-) TimerEvent: {}
+[158.366343] (-) TimerEvent: {}
+[158.467673] (-) TimerEvent: {}
+[158.568675] (-) TimerEvent: {}
+[158.670000] (-) TimerEvent: {}
+[158.771015] (-) TimerEvent: {}
+[158.872465] (-) TimerEvent: {}
+[158.973830] (-) TimerEvent: {}
+[159.075233] (-) TimerEvent: {}
+[159.176329] (-) TimerEvent: {}
+[159.277763] (-) TimerEvent: {}
+[159.300414] (wiimote) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/stat_vector_3d.cpp.o\x1b[0m\n'}
+[159.377959] (-) TimerEvent: {}
+[159.478702] (-) TimerEvent: {}
+[159.580124] (-) TimerEvent: {}
+[159.651032] (wiimote) StdoutLine: {'line': b'[ 88%] Built target teleop_wiimote\n'}
+[159.680295] (-) TimerEvent: {}
+[159.780986] (-) TimerEvent: {}
+[159.881703] (-) TimerEvent: {}
+[159.982347] (-) TimerEvent: {}
+[160.083053] (-) TimerEvent: {}
+[160.183812] (-) TimerEvent: {}
+[160.285218] (-) TimerEvent: {}
+[160.386039] (-) TimerEvent: {}
+[160.486825] (-) TimerEvent: {}
+[160.587547] (-) TimerEvent: {}
+[160.688269] (-) TimerEvent: {}
+[160.789112] (-) TimerEvent: {}
+[160.889883] (-) TimerEvent: {}
+[160.990589] (-) TimerEvent: {}
+[161.091305] (-) TimerEvent: {}
+[161.192208] (-) TimerEvent: {}
+[161.284943] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KTVectorDouble StatVector3d::\x1b[01;32m\x1b[KgetMeanScaled\x1b[m\x1b[K(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[161.285729] (wiimote) StderrLine: {'line': b"\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:91:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::binder1st<_Operation> std::\x1b[01;32m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation&, const _Tp&) \x1b[35m\x1b[K[with _Operation = multiplies<double>; _Tp = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use 'std::bind' instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[161.286203] (wiimote) StderrLine: {'line': b'   91 |     mean.begin(), mean.end(), mean.begin(), \x1b[01;35m\x1b[Kstd::bind1st(std::multiplies<double>(), scale)\x1b[m\x1b[K);\n'}
+[161.286685] (wiimote) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[161.287161] (wiimote) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/13/bits/stl_function.h:1438\x1b[m\x1b[K,\n'}
+[161.287598] (wiimote) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/bits/refwrap.h:39\x1b[m\x1b[K,\n'}
+[161.287978] (wiimote) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/13/vector:68\x1b[m\x1b[K,\n'}
+[161.288349] (wiimote) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/include/wiimote/stat_vector_3d.hpp:32\x1b[m\x1b[K,\n'}
+[161.288792] (wiimote) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:28\x1b[m\x1b[K:\n'}
+[161.289161] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/backward/binders.h:136:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[161.289613] (wiimote) StderrLine: {'line': b'  136 |     \x1b[01;36m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation& __fn, const _Tp& __x)\n'}
+[161.289996] (wiimote) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[161.291575] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KTVectorDouble StatVector3d::\x1b[01;32m\x1b[KgetVarianceScaled\x1b[m\x1b[K(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[161.292226] (-) TimerEvent: {}
+[161.292793] (wiimote) StderrLine: {'line': b"\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:139:17:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::binder1st<_Operation> std::\x1b[01;32m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation&, const _Tp&) \x1b[35m\x1b[K[with _Operation = multiplies<double>; _Tp = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use 'std::bind' instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[161.294296] (wiimote) StderrLine: {'line': b'  139 |     \x1b[01;35m\x1b[Kstd::bind1st(std::multiplies<double>(), scale)\x1b[m\x1b[K);\n'}
+[161.295342] (wiimote) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[161.296081] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/backward/binders.h:136:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[161.296786] (wiimote) StderrLine: {'line': b'  136 |     \x1b[01;36m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation& __fn, const _Tp& __x)\n'}
+[161.297480] (wiimote) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[161.298205] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[KTVectorDouble StatVector3d::\x1b[01;32m\x1b[KgetStandardDeviationScaled\x1b[m\x1b[K(double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[161.298982] (wiimote) StderrLine: {'line': b"\x1b[01m\x1b[K/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/stat_vector_3d.cpp:162:63:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::binder1st<_Operation> std::\x1b[01;32m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation&, const _Tp&) \x1b[35m\x1b[K[with _Operation = multiplies<double>; _Tp = double]\x1b[m\x1b[K\x1b[m\x1b[K\xe2\x80\x99 is deprecated: use 'std::bind' instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations\x07-Wdeprecated-declarations\x1b]8;;\x07\x1b[m\x1b[K]\n"}
+[161.299702] (wiimote) StderrLine: {'line': b'  162 |   stddev.begin(), stddev.end(), stddev.begin(), \x1b[01;35m\x1b[Kstd::bind1st(std::multiplies<double>(), scale)\x1b[m\x1b[K);\n'}
+[161.300406] (wiimote) StderrLine: {'line': b'      |                                                 \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[161.301664] (wiimote) StderrLine: {'line': b'\n'}
+[161.304191] (wiimote) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/13/backward/binders.h:136:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[161.305897] (wiimote) StderrLine: {'line': b'  136 |     \x1b[01;36m\x1b[Kbind1st\x1b[m\x1b[K(const _Operation& __fn, const _Tp& __x)\n'}
+[161.307021] (wiimote) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[161.392544] (-) TimerEvent: {}
+[161.493242] (-) TimerEvent: {}
+[161.593978] (-) TimerEvent: {}
+[161.694745] (-) TimerEvent: {}
+[161.795456] (-) TimerEvent: {}
+[161.896133] (-) TimerEvent: {}
+[161.933988] (wiimote) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libwiimote_lib.so\x1b[0m\n'}
+[161.996307] (-) TimerEvent: {}
+[162.096972] (-) TimerEvent: {}
+[162.197818] (-) TimerEvent: {}
+[162.298731] (-) TimerEvent: {}
+[162.399496] (-) TimerEvent: {}
+[162.500196] (-) TimerEvent: {}
+[162.601194] (-) TimerEvent: {}
+[162.702167] (-) TimerEvent: {}
+[162.803841] (-) TimerEvent: {}
+[162.904946] (-) TimerEvent: {}
+[163.006547] (-) TimerEvent: {}
+[163.107352] (-) TimerEvent: {}
+[163.208597] (-) TimerEvent: {}
+[163.310040] (-) TimerEvent: {}
+[163.411478] (-) TimerEvent: {}
+[163.512569] (-) TimerEvent: {}
+[163.613611] (-) TimerEvent: {}
+[163.714821] (-) TimerEvent: {}
+[163.815640] (-) TimerEvent: {}
+[163.916517] (-) TimerEvent: {}
+[164.017356] (-) TimerEvent: {}
+[164.118164] (-) TimerEvent: {}
+[164.219096] (-) TimerEvent: {}
+[164.320040] (-) TimerEvent: {}
+[164.420896] (-) TimerEvent: {}
+[164.521697] (-) TimerEvent: {}
+[164.622319] (-) TimerEvent: {}
+[164.723000] (-) TimerEvent: {}
+[164.823771] (-) TimerEvent: {}
+[164.924496] (-) TimerEvent: {}
+[164.926511] (wiimote) StdoutLine: {'line': b'[100%] Built target wiimote_lib\n'}
+[164.989356] (wiimote) CommandEnded: {'returncode': 0}
+[164.991844] (wiimote) JobProgress: {'identifier': 'wiimote', 'progress': 'install'}
+[164.992923] (wiimote) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bmes-endoscope-25/joystick_ws/build/wiimote'], 'cwd': '/home/bmes-endoscope-25/joystick_ws/build/wiimote', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'bmes-endoscope-25', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/bmes-endoscope-25', 'OLDPWD': '/home/bmes-endoscope-25', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1759', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'bmes-endoscope-25', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'bmes-endoscope-25', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/bmesendoscope25-desktop:@/tmp/.ICE-unix/1721,unix/bmesendoscope25-desktop:/tmp/.ICE-unix/1721', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/e10be585_1b16_4292_85de_4cd750446308', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.5JHTS2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.115', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'ROS_DOMAIN_ID': '1', 'AMENT_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/bmes-endoscope-25/joystick_ws/build/wiimote', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[165.024677] (-) TimerEvent: {}
+[165.042797] (wiimote) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[165.043543] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/wiimote_node\n'}
+[165.048030] (wiimote) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/wiimote_node" to ""\n'}
+[165.048676] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/teleop_wiimote_node\n'}
+[165.052855] (wiimote) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/teleop_wiimote_node" to ""\n'}
+[165.053555] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libwiimote_lib.so\n'}
+[165.107070] (wiimote) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libwiimote_lib.so" to ""\n'}
+[165.107745] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libteleop_wiimote.so\n'}
+[165.124853] (-) TimerEvent: {}
+[165.167623] (wiimote) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/libteleop_wiimote.so" to ""\n'}
+[165.168243] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote\n'}
+[165.168792] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote\n'}
+[165.169260] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/stat_vector_3d.hpp\n'}
+[165.169963] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/wiimote_controller.hpp\n'}
+[165.170985] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/include/wiimote/wiimote/teleop_wiimote.hpp\n'}
+[165.171994] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch\n'}
+[165.172571] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/turtlesim.launch.py\n'}
+[165.176896] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/feedback_test.launch.py\n'}
+[165.178206] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/launch/wiimote_lifecycle.launch.py\n'}
+[165.179582] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config\n'}
+[165.180133] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config/wiimote_params.yaml\n'}
+[165.181495] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/config/teleop_wiimote_params.yaml\n'}
+[165.183810] (wiimote) StdoutLine: {'line': b'-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/wiimote_node\n'}
+[165.185057] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/wiimote/feedback_tester.py\n'}
+[165.187450] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/package_run_dependencies/wiimote\n'}
+[165.189280] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/parent_prefix_path/wiimote\n'}
+[165.191004] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.sh\n'}
+[165.192394] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.dsv\n'}
+[165.193696] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/path.sh\n'}
+[165.194951] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/environment/path.dsv\n'}
+[165.196220] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.bash\n'}
+[165.197492] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.sh\n'}
+[165.198555] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.zsh\n'}
+[165.199561] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/local_setup.dsv\n'}
+[165.200606] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.dsv\n'}
+[165.202085] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/packages/wiimote\n'}
+[165.203480] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/ament_index/resource_index/rclcpp_components/wiimote\n'}
+[165.204978] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport.cmake\n'}
+[165.206171] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/export_wiimoteExport-noconfig.cmake\n'}
+[165.207304] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimote-extras.cmake\n'}
+[165.208342] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[165.209499] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[165.210647] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig.cmake\n'}
+[165.211524] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig-version.cmake\n'}
+[165.212584] (wiimote) StdoutLine: {'line': b'-- Installing: /home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.xml\n'}
+[165.219295] (wiimote) CommandEnded: {'returncode': 0}
+[165.225041] (-) TimerEvent: {}
+[165.309777] (wiimote) JobEnded: {'identifier': 'wiimote', 'rc': 0}
+[165.313976] (-) EventReactorShutdown: {}

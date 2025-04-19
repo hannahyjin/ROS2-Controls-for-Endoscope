@@ -1,0 +1,544 @@
+[0.417s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.417s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffbb89b830>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffbb7bb710>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffbb7bb710>>)
+[0.587s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.588s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/bmes-endoscope-25/joystick_ws'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.589s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.590s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.692s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.693s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.694s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.695s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.696s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.699s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.700s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.701s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.702s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ignore'
+[0.703s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ignore_ament_install'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['colcon_pkg']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'colcon_pkg'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['colcon_meta']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'colcon_meta'
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['ros']
+[0.704s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ros'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['cmake', 'python']
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'cmake'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'python'
+[0.705s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['python_setup_py']
+[0.706s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'python_setup_py'
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['ignore', 'ignore_ament_install']
+[0.707s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ignore'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ignore_ament_install'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['colcon_pkg']
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'colcon_pkg'
+[0.708s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['colcon_meta']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'colcon_meta'
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['ros']
+[0.709s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ros'
+[0.724s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/joy' with type 'ros.ament_cmake' and name 'joy'
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['ignore', 'ignore_ament_install']
+[0.726s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ignore'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ignore_ament_install'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['colcon_pkg']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'colcon_pkg'
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['colcon_meta']
+[0.727s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'colcon_meta'
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['ros']
+[0.728s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ros'
+[0.731s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/joy_linux' with type 'ros.ament_cmake' and name 'joy_linux'
+[0.732s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ignore'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ignore_ament_install'
+[0.733s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['colcon_pkg']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'colcon_pkg'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['colcon_meta']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'colcon_meta'
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['ros']
+[0.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ros'
+[0.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) ignored
+[0.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['ignore', 'ignore_ament_install']
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ignore'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ignore_ament_install'
+[0.736s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['colcon_pkg']
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'colcon_pkg'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['colcon_meta']
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'colcon_meta'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['ros']
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ros'
+[0.737s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) ignored
+[0.738s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['ignore', 'ignore_ament_install']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ignore'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ignore_ament_install'
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['colcon_pkg']
+[0.739s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'colcon_pkg'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['colcon_meta']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'colcon_meta'
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['ros']
+[0.740s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ros'
+[0.742s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/sdl2_vendor' with type 'ros.ament_cmake' and name 'sdl2_vendor'
+[0.744s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['ignore', 'ignore_ament_install']
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ignore'
+[0.749s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ignore_ament_install'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['colcon_pkg']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'colcon_pkg'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['colcon_meta']
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'colcon_meta'
+[0.750s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['ros']
+[0.751s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ros'
+[0.755s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/spacenav' with type 'ros.ament_cmake' and name 'spacenav'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['ignore', 'ignore_ament_install']
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ignore'
+[0.756s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ignore_ament_install'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['colcon_pkg']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'colcon_pkg'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['colcon_meta']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'colcon_meta'
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['ros']
+[0.757s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ros'
+[0.762s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/wiimote' with type 'ros.ament_cmake' and name 'wiimote'
+[0.763s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ignore'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ignore_ament_install'
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['colcon_pkg']
+[0.764s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'colcon_pkg'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['colcon_meta']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'colcon_meta'
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['ros']
+[0.765s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ros'
+[0.768s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/wiimote_msgs' with type 'ros.ament_cmake' and name 'wiimote_msgs'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extension 'ignore'
+[0.770s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extension 'ignore_ament_install'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extensions ['colcon_pkg']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extension 'colcon_pkg'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extensions ['colcon_meta']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extension 'colcon_meta'
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extensions ['ros']
+[0.771s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_teleop) by extension 'ros'
+[0.775s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_teleop' with type 'ros.ament_cmake' and name 'my_teleop'
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.775s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.882s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_args' from command line to 'None'
+[0.882s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_target' from command line to 'None'
+[0.882s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.882s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_clean_first' from command line to 'False'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_force_configure' from command line to 'False'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'ament_cmake_args' from command line to 'None'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.883s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.883s] DEBUG:colcon.colcon_core.verb:Building package 'joy_linux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/joy_linux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/joy_linux', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux', 'symlink_install': False, 'test_result_base': None}
+[0.885s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_args' from command line to 'None'
+[0.885s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_target' from command line to 'None'
+[0.885s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.885s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.886s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.886s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.886s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.886s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.886s] Level 5:colcon.colcon_core.verb:set package 'my_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.886s] DEBUG:colcon.colcon_core.verb:Building package 'my_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/my_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/my_teleop', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/my_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_args' from command line to 'None'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_target' from command line to 'None'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_clean_first' from command line to 'False'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_force_configure' from command line to 'False'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'ament_cmake_args' from command line to 'None'
+[0.888s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.889s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.889s] DEBUG:colcon.colcon_core.verb:Building package 'sdl2_vendor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/sdl2_vendor', 'symlink_install': False, 'test_result_base': None}
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_args' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_target' from command line to 'None'
+[0.890s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_clean_first' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_force_configure' from command line to 'False'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'ament_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.891s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.891s] DEBUG:colcon.colcon_core.verb:Building package 'spacenav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/spacenav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/spacenav', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav', 'symlink_install': False, 'test_result_base': None}
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_args' from command line to 'None'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_target' from command line to 'None'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.893s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.894s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.894s] DEBUG:colcon.colcon_core.verb:Building package 'wiimote_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.895s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_args' from command line to 'None'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_target' from command line to 'None'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_clean_first' from command line to 'False'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_force_configure' from command line to 'False'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'ament_cmake_args' from command line to 'None'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.896s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.896s] DEBUG:colcon.colcon_core.verb:Building package 'joy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/joy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/joy', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy', 'symlink_install': False, 'test_result_base': None}
+[0.897s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_args' from command line to 'None'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_target' from command line to 'None'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_clean_cache' from command line to 'False'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_clean_first' from command line to 'False'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_force_configure' from command line to 'False'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'ament_cmake_args' from command line to 'None'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'catkin_cmake_args' from command line to 'None'
+[0.898s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.898s] DEBUG:colcon.colcon_core.verb:Building package 'wiimote' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/bmes-endoscope-25/joystick_ws/build/wiimote', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/bmes-endoscope-25/joystick_ws/install/wiimote', 'merge_install': False, 'path': '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote', 'symlink_install': False, 'test_result_base': None}
+[0.899s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.902s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.903s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/sdl2_vendor' with build type 'ament_cmake'
+[0.904s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/sdl2_vendor'
+[0.930s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.931s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.961s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote_msgs' with build type 'ament_cmake'
+[0.961s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote_msgs'
+[0.962s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.989s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux' with build type 'ament_cmake'
+[0.991s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy_linux'
+[0.992s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.016s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/my_teleop' with build type 'ament_cmake'
+[1.017s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/my_teleop'
+[1.019s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor -- -j4 -l4
+[1.098s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs -- -j4 -l4
+[1.133s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy_linux -- -j4 -l4
+[1.167s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor -- -j4 -l4
+[1.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor
+[1.975s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdl2_vendor)
+[1.980s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/sdl2_vendor
+[2.034s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor' for CMake module files
+[2.047s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor' for CMake config files
+[2.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdl2_vendor', 'cmake_prefix_path')
+[2.055s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.dsv'
+[2.060s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.sh'
+[2.071s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/bin'
+[2.071s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/lib/pkgconfig/sdl2_vendor.pc'
+[2.088s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/lib/python3.12/site-packages'
+[2.089s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/bin'
+[2.091s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv'
+[2.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.sh'
+[2.103s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.bash'
+[2.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.zsh'
+[2.124s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/colcon-core/packages/sdl2_vendor)
+[2.134s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdl2_vendor)
+[2.135s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor' for CMake module files
+[2.152s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor' for CMake config files
+[2.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdl2_vendor', 'cmake_prefix_path')
+[2.158s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.dsv'
+[2.162s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.sh'
+[2.166s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/bin'
+[2.167s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/lib/pkgconfig/sdl2_vendor.pc'
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/lib/python3.12/site-packages'
+[2.169s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/bin'
+[2.170s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv'
+[2.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.sh'
+[2.176s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.bash'
+[2.181s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/sdl2_vendor/package.zsh'
+[2.184s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor/share/colcon-core/packages/sdl2_vendor)
+[2.193s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav' with build type 'ament_cmake'
+[2.194s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/spacenav'
+[2.196s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.333s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/spacenav -- -j4 -l4
+[2.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy_linux -- -j4 -l4
+[2.389s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy_linux
+[2.402s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+[2.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/my_teleop
+[2.581s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_teleop)
+[2.584s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop' for CMake module files
+[2.597s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop' for CMake config files
+[2.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_teleop', 'cmake_prefix_path')
+[2.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/hook/cmake_prefix_path.dsv'
+[2.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/hook/cmake_prefix_path.sh'
+[2.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/my_teleop
+[2.629s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib'
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/bin'
+[2.634s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/pkgconfig/my_teleop.pc'
+[2.636s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/python3.12/site-packages'
+[2.638s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/bin'
+[2.642s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.dsv'
+[2.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.sh'
+[2.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.bash'
+[2.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.zsh'
+[2.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/colcon-core/packages/my_teleop)
+[2.668s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_teleop)
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop' for CMake module files
+[2.674s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop' for CMake config files
+[2.676s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_teleop', 'cmake_prefix_path')
+[2.677s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/hook/cmake_prefix_path.dsv'
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/hook/cmake_prefix_path.sh'
+[2.683s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib'
+[2.683s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/bin'
+[2.684s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/pkgconfig/my_teleop.pc'
+[2.685s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/python3.12/site-packages'
+[2.686s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/bin'
+[2.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.dsv'
+[2.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.sh'
+[2.693s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.bash'
+[2.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.zsh'
+[2.705s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/colcon-core/packages/my_teleop)
+[2.710s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy' with build type 'ament_cmake'
+[2.711s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/joy'
+[2.712s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.749s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_linux)
+[2.750s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux' for CMake module files
+[2.762s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux' for CMake config files
+[2.767s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy_linux
+[2.768s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_linux', 'cmake_prefix_path')
+[2.770s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.dsv'
+[2.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.sh'
+[2.808s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/bin'
+[2.809s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/pkgconfig/joy_linux.pc'
+[2.811s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/python3.12/site-packages'
+[2.812s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/bin'
+[2.814s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.dsv'
+[2.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.sh'
+[2.820s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.bash'
+[2.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.zsh'
+[2.826s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/colcon-core/packages/joy_linux)
+[2.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_linux)
+[2.831s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux' for CMake module files
+[2.837s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux' for CMake config files
+[2.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_linux', 'cmake_prefix_path')
+[2.839s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.dsv'
+[2.851s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.sh'
+[2.864s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib'
+[2.865s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/bin'
+[2.865s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/pkgconfig/joy_linux.pc'
+[2.867s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/lib/python3.12/site-packages'
+[2.871s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/bin'
+[2.876s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.dsv'
+[2.888s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.sh'
+[2.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.bash'
+[2.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/joy_linux/package.zsh'
+[2.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/joy_linux/share/colcon-core/packages/joy_linux)
+[2.962s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy -- -j4 -l4
+[3.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/spacenav -- -j4 -l4
+[3.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/spacenav
+[3.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spacenav)
+[3.422s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav' for CMake module files
+[3.453s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav' for CMake config files
+[3.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/spacenav
+[3.456s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'cmake_prefix_path')
+[3.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.dsv'
+[3.460s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.sh'
+[3.464s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib'
+[3.464s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'ld_library_path_lib')
+[3.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.dsv'
+[3.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.sh'
+[3.476s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/bin'
+[3.481s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/pkgconfig/spacenav.pc'
+[3.483s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/python3.12/site-packages'
+[3.484s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/bin'
+[3.498s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.dsv'
+[3.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.sh'
+[3.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.bash'
+[3.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.zsh'
+[3.529s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/colcon-core/packages/spacenav)
+[3.534s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spacenav)
+[3.535s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav' for CMake module files
+[3.538s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav' for CMake config files
+[3.540s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'cmake_prefix_path')
+[3.541s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.dsv'
+[3.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.sh'
+[3.547s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib'
+[3.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'ld_library_path_lib')
+[3.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.dsv'
+[3.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.sh'
+[3.554s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/bin'
+[3.554s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/pkgconfig/spacenav.pc'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/lib/python3.12/site-packages'
+[3.557s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/spacenav/bin'
+[3.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.dsv'
+[3.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.sh'
+[3.575s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.bash'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/spacenav/package.zsh'
+[3.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/spacenav/share/colcon-core/packages/spacenav)
+[3.963s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/joy -- -j4 -l4
+[3.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/joy': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy
+[4.079s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy)
+[4.080s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy' for CMake module files
+[4.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/sdl2_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/joy
+[4.092s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy' for CMake config files
+[4.098s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'cmake_prefix_path')
+[4.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/cmake_prefix_path.dsv'
+[4.100s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/cmake_prefix_path.sh'
+[4.103s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib'
+[4.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'ld_library_path_lib')
+[4.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/ld_library_path_lib.dsv'
+[4.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/ld_library_path_lib.sh'
+[4.108s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/bin'
+[4.108s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib/pkgconfig/joy.pc'
+[4.109s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib/python3.12/site-packages'
+[4.110s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/bin'
+[4.111s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.dsv'
+[4.113s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.sh'
+[4.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.bash'
+[4.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.zsh'
+[4.121s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/joy/share/colcon-core/packages/joy)
+[4.123s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy)
+[4.124s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy' for CMake module files
+[4.127s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy' for CMake config files
+[4.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'cmake_prefix_path')
+[4.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/cmake_prefix_path.dsv'
+[4.131s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/cmake_prefix_path.sh'
+[4.134s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib'
+[4.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'ld_library_path_lib')
+[4.135s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/ld_library_path_lib.dsv'
+[4.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/hook/ld_library_path_lib.sh'
+[4.139s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/bin'
+[4.139s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib/pkgconfig/joy.pc'
+[4.140s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/lib/python3.12/site-packages'
+[4.141s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/joy/bin'
+[4.142s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.dsv'
+[4.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.sh'
+[4.147s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.bash'
+[4.149s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/joy/share/joy/package.zsh'
+[4.151s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/joy/share/colcon-core/packages/joy)
+[4.800s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs -- -j4 -l4
+[4.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs
+[5.240s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote_msgs)
+[5.241s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs' for CMake module files
+[5.242s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote_msgs
+[5.247s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs' for CMake config files
+[5.252s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'cmake_prefix_path')
+[5.253s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.dsv'
+[5.255s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.sh'
+[5.258s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib'
+[5.259s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'ld_library_path_lib')
+[5.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.dsv'
+[5.261s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.sh'
+[5.263s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/bin'
+[5.263s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/pkgconfig/wiimote_msgs.pc'
+[5.264s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages'
+[5.265s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'pythonpath')
+[5.265s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.dsv'
+[5.267s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.sh'
+[5.272s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/bin'
+[5.273s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv'
+[5.275s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.sh'
+[5.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.bash'
+[5.279s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.zsh'
+[5.280s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/colcon-core/packages/wiimote_msgs)
+[5.284s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote_msgs)
+[5.285s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs' for CMake module files
+[5.292s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs' for CMake config files
+[5.296s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'cmake_prefix_path')
+[5.297s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.dsv'
+[5.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.sh'
+[5.304s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib'
+[5.306s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'ld_library_path_lib')
+[5.307s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.dsv'
+[5.309s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.sh'
+[5.311s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/bin'
+[5.311s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/pkgconfig/wiimote_msgs.pc'
+[5.312s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages'
+[5.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'pythonpath')
+[5.313s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.dsv'
+[5.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.sh'
+[5.318s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/bin'
+[5.319s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv'
+[5.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.sh'
+[5.324s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.bash'
+[5.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/wiimote_msgs/package.zsh'
+[5.327s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/share/colcon-core/packages/wiimote_msgs)
+[5.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote' with build type 'ament_cmake'
+[5.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote'
+[5.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.409s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote -- -j4 -l4
+[5.968s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/wiimote -- -j4 -l4
+[5.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote
+[6.080s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote)
+[6.080s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote' for CMake module files
+[6.082s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bmes-endoscope-25/joystick_ws/install/wiimote_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/wiimote
+[6.086s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote' for CMake config files
+[6.089s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'cmake_prefix_path')
+[6.090s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.dsv'
+[6.093s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.sh'
+[6.100s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib'
+[6.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'ld_library_path_lib')
+[6.102s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.dsv'
+[6.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.sh'
+[6.107s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/bin'
+[6.107s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/pkgconfig/wiimote.pc'
+[6.108s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/python3.12/site-packages'
+[6.109s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/bin'
+[6.110s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.dsv'
+[6.112s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.sh'
+[6.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.bash'
+[6.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.zsh'
+[6.117s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/colcon-core/packages/wiimote)
+[6.119s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote)
+[6.120s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote' for CMake module files
+[6.123s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote' for CMake config files
+[6.125s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'cmake_prefix_path')
+[6.126s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.dsv'
+[6.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.sh'
+[6.130s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib'
+[6.130s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'ld_library_path_lib')
+[6.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.dsv'
+[6.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.sh'
+[6.134s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/bin'
+[6.134s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/pkgconfig/wiimote.pc'
+[6.135s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/lib/python3.12/site-packages'
+[6.136s] Level 1:colcon.colcon_core.environment:checking '/home/bmes-endoscope-25/joystick_ws/install/wiimote/bin'
+[6.137s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.dsv'
+[6.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.sh'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.bash'
+[6.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/wiimote/package.zsh'
+[6.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/bmes-endoscope-25/joystick_ws/install/wiimote/share/colcon-core/packages/wiimote)
+[6.146s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.147s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.148s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.148s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.196s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.196s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.196s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.329s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.330s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bmes-endoscope-25/joystick_ws/install/local_setup.sh'
+[6.336s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/bmes-endoscope-25/joystick_ws/install/_local_setup_util_sh.py'
+[6.344s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bmes-endoscope-25/joystick_ws/install/setup.sh'
+[6.351s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bmes-endoscope-25/joystick_ws/install/local_setup.bash'
+[6.355s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bmes-endoscope-25/joystick_ws/install/setup.bash'
+[6.361s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/bmes-endoscope-25/joystick_ws/install/local_setup.zsh'
+[6.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/bmes-endoscope-25/joystick_ws/install/setup.zsh'

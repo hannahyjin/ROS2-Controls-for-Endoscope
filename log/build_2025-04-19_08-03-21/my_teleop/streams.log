@@ -1,0 +1,25 @@
+[0.083s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+[0.448s] [ 50%] [32mBuilding CXX object CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o[0m
+[37.108s] [100%] [32m[1mLinking CXX executable controller_dpad[0m
+[39.094s] [100%] Built target controller_dpad
+[39.160s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/bmes-endoscope-25/joystick_ws/build/my_teleop -- -j4 -l4
+[39.222s] Invoking command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/my_teleop
+[39.266s] -- Install configuration: ""
+[39.266s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/package_run_dependencies/my_teleop
+[39.267s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/parent_prefix_path/my_teleop
+[39.267s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.sh
+[39.268s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.dsv
+[39.268s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.sh
+[39.269s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.dsv
+[39.269s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.bash
+[39.270s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.sh
+[39.270s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.zsh
+[39.271s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.dsv
+[39.272s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.dsv
+[39.272s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/packages/my_teleop
+[39.272s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig.cmake
+[39.273s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig-version.cmake
+[39.273s] -- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.xml
+[39.274s] -- Installing: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/my_teleop/controller_dpad
+[39.315s] -- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/my_teleop/controller_dpad" to ""
+[39.322s] Invoked command in '/home/bmes-endoscope-25/joystick_ws/build/my_teleop' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/bmes-endoscope-25/joystick_ws/build/my_teleop

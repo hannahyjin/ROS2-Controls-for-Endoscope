@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/controller_dpad.dir/src/controller_dpad.cpp.o[0m
+[100%] [32m[1mLinking CXX executable controller_dpad[0m
+[100%] Built target controller_dpad
+-- Install configuration: ""
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/package_run_dependencies/my_teleop
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/parent_prefix_path/my_teleop
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.sh
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.sh
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/environment/path.dsv
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.bash
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.sh
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.zsh
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/local_setup.dsv
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.dsv
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/ament_index/resource_index/packages/my_teleop
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig.cmake
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/cmake/my_teleopConfig-version.cmake
+-- Up-to-date: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/share/my_teleop/package.xml
+-- Installing: /home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/my_teleop/controller_dpad
+-- Set non-toolchain portion of runtime path of "/home/bmes-endoscope-25/joystick_ws/install/my_teleop/lib/my_teleop/controller_dpad" to ""
