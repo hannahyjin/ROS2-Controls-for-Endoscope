@@ -1,9 +1,0 @@
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/game_controller.dir/all] Error 2
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[2]: *** wait: No child processes.  Stop.
-gmake[1]: *** [CMakeFiles/Makefile2:145: CMakeFiles/joy.dir/all] Error 2
-gmake: *** [Makefile:146: all] Interrupt

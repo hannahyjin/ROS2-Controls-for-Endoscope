@@ -1,3 +1,0 @@
-gmake[2]: *** [CMakeFiles/spacenav.dir/build.make:76: CMakeFiles/spacenav.dir/src/spacenav.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/spacenav.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

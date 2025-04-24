@@ -5,9 +5,9 @@
 #include <string.h>
 
 #include "wiimote_msgs/msg/detail/state__functions.h"
-#include "wiimote_msgs/msg/detail/state__type_support.h"
-#include "wiimote_msgs/msg/detail/state__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "wiimote_msgs/msg/detail/state__struct.h"
+#include "wiimote_msgs/msg/detail/state__type_support.h"
 
 #ifdef __cplusplus
 extern "C"

@@ -1,4 +1,0 @@
-gmake[2]: Warning: File '/home/bmes-endoscope-25/joystick_ws/src/joystick_drivers/wiimote/src/wiimote_controller.cpp' has modification time 29762296 s in the future
-gmake[2]: *** [CMakeFiles/wiimote_lib.dir/build.make:76: CMakeFiles/wiimote_lib.dir/src/wiimote_controller.cpp.o] Interrupt
-gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/wiimote_lib.dir/all] Interrupt
-gmake: *** [Makefile:146: all] Interrupt

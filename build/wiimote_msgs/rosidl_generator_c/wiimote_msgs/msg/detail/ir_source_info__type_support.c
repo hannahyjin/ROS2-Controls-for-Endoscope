@@ -4,10 +4,10 @@
 
 #include <string.h>
 
-#include "wiimote_msgs/msg/detail/ir_source_info__type_support.h"
-#include "wiimote_msgs/msg/detail/ir_source_info__functions.h"
-#include "wiimote_msgs/msg/detail/ir_source_info__struct.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "wiimote_msgs/msg/detail/ir_source_info__functions.h"
+#include "wiimote_msgs/msg/detail/ir_source_info__type_support.h"
+#include "wiimote_msgs/msg/detail/ir_source_info__struct.h"
 
 #ifdef __cplusplus
 extern "C"
