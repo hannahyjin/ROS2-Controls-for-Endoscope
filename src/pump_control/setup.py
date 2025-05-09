@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-        	'pump_control = pump_control.pump_control_node:main',
+        	'pump_control_node = pump_control.pump_control_node:main',
         ],
     },
 )
