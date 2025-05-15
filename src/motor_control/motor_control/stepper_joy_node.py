@@ -18,7 +18,7 @@ class StepperJoyNode(Node):
         self.DPAD_UP     = 13
         self.DPAD_DOWN   = 14
         self.STEP_DELAY = 0.001
-        self.STOP_DURATION = 2.0  # seconds
+        self.STOP_DURATION = 3.0  # seconds
         # ────────────
         GPIO.setmode(GPIO.BCM)
         GPIO.setup(self.DIR1_PIN,  GPIO.OUT)
