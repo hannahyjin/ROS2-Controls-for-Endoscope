@@ -9,8 +9,13 @@ import time
 class IMUDataNode(Node):
     def __init__(self):
         super().__init__('imu_data')
-        # frequency control: one log every 0.5 seconds
+        # frequency control: one log per 0.5 seconds
         self._last_time = time.time()
+        # calibration offsets (set on first callback)
+        self._calibrated = False
+        self._roll_offset = 0.0
+        self._pitch_offset = 0.0
+        self._yaw_offset = 0.0
 
         # subscribe to IMU data with sensor_data QoS
         self.create_subscription(
@@ -19,7 +24,7 @@ class IMUDataNode(Node):
             self.imu_callback,
             qos_profile=qos_profile_sensor_data
         )
-        self.get_logger().info('IMUDataNode initialized, logging Euler angles at 2 Hz')
+        self.get_logger().info('IMUDataNode initialized, logging calibrated Euler angles at 2 Hz')
 
     def imu_callback(self, msg: Imu):
         now = time.time()
@@ -55,9 +60,28 @@ class IMUDataNode(Node):
         pitch_deg = math.degrees(pitch)
         yaw_deg = math.degrees(yaw)
 
-        # log Euler angles
+        # perform calibration on first valid reading
+        if not self._calibrated:
+            self._roll_offset = roll_deg
+            self._pitch_offset = pitch_deg
+            self._yaw_offset = yaw_deg
+            self._calibrated = True
+            self.get_logger().info(
+                f"Calibrated: roll_offset={self._roll_offset:.2f}, "
+                f"pitch_offset={self._pitch_offset:.2f}, "
+                f"yaw_offset={self._yaw_offset:.2f}"
+            )
+            return
+
+        # subtract offsets
+        roll_cal  = roll_deg  - self._roll_offset
+        pitch_cal = pitch_deg - self._pitch_offset
+        yaw_cal   = yaw_deg   - self._yaw_offset
+
+        # log calibrated angles
         self.get_logger().info(
-            f"Euler (deg): Roll={roll_deg:.2f}, Pitch={pitch_deg:.2f}, Yaw={yaw_deg:.2f}"
+            f"Calibrated Euler (deg): Roll={roll_cal:.2f}, "
+            f"Pitch={pitch_cal:.2f}, Yaw={yaw_cal:.2f}"
         )
 
 
