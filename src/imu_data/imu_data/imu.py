@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
+from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Imu
+import math, time
 
 class IMUDataNode(Node):
     def __init__(self):
@@ -14,10 +16,11 @@ class IMUDataNode(Node):
         self.filtered_gyro = [0.0, 0.0, 0.0]
         self.first_msg = True
 
-        self.create_subscription(Imu, '/imu/data', self.imu_callback, 10)
-        self.get_logger().info('Listening to /imu/data with EMA filter (alpha=' + str(self.alpha) + ')')
+        self.create_subscription(Imu, '/data', self.imu_callback, qos_profile=qos_profile_sensor_data)
+        self.get_logger().info('Listening to /data with EMA filter (alpha=' + str(self.alpha) + ')')
 
     def imu_callback(self, msg: Imu):
+        print('in callback')
         # orientation pass-through
         ori = msg.orientation
         # raw data
