@@ -3,50 +3,61 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Imu
-import math, time
+import math
+import time
 
 class IMUDataNode(Node):
     def __init__(self):
         super().__init__('imu_data')
-        # filter parameter
-        self.declare_parameter('alpha', 0.1)
-        self.alpha = self.get_parameter('alpha').value
-        # state for EMA filter
-        self.filtered_acc = [0.0, 0.0, 0.0]
-        self.filtered_gyro = [0.0, 0.0, 0.0]
-        self.first_msg = True
+        # frequency control: one log every 0.5 seconds
+        self._last_time = time.time()
 
-        self.create_subscription(Imu, '/data', self.imu_callback, qos_profile=qos_profile_sensor_data)
-        self.get_logger().info('Listening to /data with EMA filter (alpha=' + str(self.alpha) + ')')
+        # subscribe to IMU data with sensor_data QoS
+        self.create_subscription(
+            Imu,
+            '/data',  # topic name where IMU publishes
+            self.imu_callback,
+            qos_profile=qos_profile_sensor_data
+        )
+        self.get_logger().info('IMUDataNode initialized, logging Euler angles at 2 Hz')
 
     def imu_callback(self, msg: Imu):
-        print('in callback')
-        # orientation pass-through
-        ori = msg.orientation
-        # raw data
-        acc = msg.linear_acceleration
-        gyro = msg.angular_velocity
+        now = time.time()
+        # only output once every 0.5 seconds
+        if now - self._last_time < 0.5:
+            return
+        self._last_time = now
 
-        # initialize filter on first message
-        if self.first_msg:
-            self.filtered_acc = [acc.x, acc.y, acc.z]
-            self.filtered_gyro = [gyro.x, gyro.y, gyro.z]
-            self.first_msg = False
+        # convert quaternion to Euler angles (roll, pitch, yaw)
+        qx, qy, qz, qw = (
+            msg.orientation.x,
+            msg.orientation.y,
+            msg.orientation.z,
+            msg.orientation.w
+        )
+        # roll (x-axis rotation)
+        sinr_cosp = 2.0 * (qw * qx + qy * qz)
+        cosr_cosp = 1.0 - 2.0 * (qx * qx + qy * qy)
+        roll = math.atan2(sinr_cosp, cosr_cosp)
+        # pitch (y-axis rotation)
+        sinp = 2.0 * (qw * qy - qz * qx)
+        if abs(sinp) >= 1:
+            pitch = math.copysign(math.pi / 2.0, sinp)
+        else:
+            pitch = math.asin(sinp)
+        # yaw (z-axis rotation)
+        siny_cosp = 2.0 * (qw * qz + qx * qy)
+        cosy_cosp = 1.0 - 2.0 * (qy * qy + qz * qz)
+        yaw = math.atan2(siny_cosp, cosy_cosp)
 
-        # apply EMA filter
-        a = self.alpha
-        self.filtered_acc[0] = a * acc.x + (1 - a) * self.filtered_acc[0]
-        self.filtered_acc[1] = a * acc.y + (1 - a) * self.filtered_acc[1]
-        self.filtered_acc[2] = a * acc.z + (1 - a) * self.filtered_acc[2]
-        self.filtered_gyro[0] = a * gyro.x + (1 - a) * self.filtered_gyro[0]
-        self.filtered_gyro[1] = a * gyro.y + (1 - a) * self.filtered_gyro[1]
-        self.filtered_gyro[2] = a * gyro.z + (1 - a) * self.filtered_gyro[2]
+        # convert to degrees
+        roll_deg = math.degrees(roll)
+        pitch_deg = math.degrees(pitch)
+        yaw_deg = math.degrees(yaw)
 
-        # log filtered values
+        # log Euler angles
         self.get_logger().info(
-            f"\nOrientation: x={ori.x:.3f}, y={ori.y:.3f}, z={ori.z:.3f}, w={ori.w:.3f}\n"
-            f"Filtered Acceleration: x={self.filtered_acc[0]:.3f}, y={self.filtered_acc[1]:.3f}, z={self.filtered_acc[2]:.3f}\n"
-            f"Filtered Gyroscope:    x={self.filtered_gyro[0]:.3f}, y={self.filtered_gyro[1]:.3f}, z={self.filtered_gyro[2]:.3f}"
+            f"Euler (deg): Roll={roll_deg:.2f}, Pitch={pitch_deg:.2f}, Yaw={yaw_deg:.2f}"
         )
 
 
@@ -55,8 +66,6 @@ def main(args=None):
     node = IMUDataNode()
     try:
         rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
     finally:
         node.destroy_node()
         rclpy.shutdown()
