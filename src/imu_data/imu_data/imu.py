@@ -3,6 +3,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.qos import qos_profile_sensor_data
 from sensor_msgs.msg import Imu
+from collections import deque
 import math
 import time
 
@@ -24,6 +25,7 @@ class IMUDataNode(Node):
             self.imu_callback,
             qos_profile=qos_profile_sensor_data
         )
+        self._buffer = deque(maxlen = 120)
         self.get_logger().info('IMUDataNode initialized, logging calibrated Euler angles at 2 Hz')
 
     def imu_callback(self, msg: Imu):
@@ -80,9 +82,14 @@ class IMUDataNode(Node):
 
         # log calibrated angles
         self.get_logger().info(
-            f"Calibrated Euler (deg): Roll={roll_cal:.2f}, "
+            f"Euler (deg): Roll={roll_cal:.2f}, "
             f"Pitch={pitch_cal:.2f}, Yaw={yaw_cal:.2f}"
         )
+        line = f"Euler (deg): Roll={roll_cal:.2f}, Pitch={pitch_cal:.2f}, Yaw={yaw_cal:.2f}"
+        self._buffer.append(line)
+        
+#        with open('/imu_last120.log', 'w') as f:
+#            f.write('\n'.join(self._buffer) + '\n')        
 
 
 def main(args=None):
