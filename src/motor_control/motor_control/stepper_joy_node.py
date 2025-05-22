@@ -3,7 +3,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Joy
 import RPi.GPIO as GPIO
-from time import sleep
+from time import time
  
 class StepperJoyNode(Node):
     def __init__(self):
@@ -112,7 +112,7 @@ class StepperJoyNode(Node):
  
         GPIO.output(self.STEP1_PIN, GPIO.HIGH)
         GPIO.output(self.STEP2_PIN, GPIO.HIGH)
-        sleep(self.STEP_DELAY)
+        time(self.STEP_DELAY)
         GPIO.output(self.STEP1_PIN, GPIO.LOW)
         GPIO.output(self.STEP2_PIN, GPIO.LOW)
  
