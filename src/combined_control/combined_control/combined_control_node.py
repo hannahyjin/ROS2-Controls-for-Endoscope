@@ -40,6 +40,7 @@ class CombinedControlNode(Node):
         self.RB_BUTTON  = 5   # motor1 CCW / motor2 CW
         self.DPAD_UP    = 13  # both CW
         self.DPAD_DOWN  = 14  # both CCW
+        self.START_BUTTON = 7 # full control
         self.BUTTONS    = {'A':0,'B':1,'X':2,'Y':3}  # pump controls
 
         # ── GPIO SETUP ─────────────────────────────
@@ -85,6 +86,8 @@ class CombinedControlNode(Node):
             new_mode, btn = 'UP', self.DPAD_UP
         elif b[self.DPAD_DOWN]:
             new_mode, btn = 'DOWN', self.DPAD_DOWN
+        elif b[self.START_BUTTON]:
+            new_mode, btn = 'START', self.START_BUTTON
 
         if btn is not None:
             if not self._motor_disabled and btn != self._motor_btn:
