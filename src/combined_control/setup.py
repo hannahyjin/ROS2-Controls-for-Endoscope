@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'combined_control = combined_control.combined_control_node:main',
         ],
     },
 )
