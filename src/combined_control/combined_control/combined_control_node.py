@@ -23,7 +23,6 @@ class CombinedControlNode(Node):
         self._auto_phase    = 0
         self._phase_start   = 0
         self.SOL_DELAY      = 0.5
-        self.PUMP_DURATION  = 5.0
         self.AUTO_PHASES    = 6
 
         # ── PUMP CONFIG ────────────────────────────
@@ -86,13 +85,14 @@ class CombinedControlNode(Node):
         if b[self.START_BUTTON]:
             if not self._auto_active:
                 self._auto_active  = True
+                self._motor_disabled = False
                 self._auto_phase   = 0
                 self._phase_start  = now
                 self.get_logger().info('Autonomous cycle START')
         else:
             if self._auto_active:
                 self._auto_active = False
-                self._clear_all()
+                self._clear_pumps()
                 self._pump_key   = None
                 self._motor_mode = None
                 self.get_logger().info('Autonomous cycle STOP')
@@ -149,11 +149,11 @@ class CombinedControlNode(Node):
                     self._pump_key = None
                     self._pump_time = 0
     
-    # 0 = anchor proxy (inflation)
-    # 1 = release distal (deflation)
-    # 2 = move motors forwards
-    # 3 = anchor distal (inflation)
-    # 4 = release proxy (deflation)
+    # 0 = inflate front
+    # 1 = deflate back
+    # 2 = move motors backwards
+    # 3 = inflate back
+    # 4 = deflate front
     # 5 = move motors forwards
     # and repeat            
     def auto_cycle(self):
@@ -186,22 +186,29 @@ class CombinedControlNode(Node):
                     GPIO.output(self.PUMP_PINS[k], GPIO.LOW)
                 self._auto_phase  = (ph+1) % self.AUTO_PHASES
                 self._phase_start = now
-        elif ph in (2, 5):
-            GPIO.output(self.DIR1_PIN, GPIO.LOW)
-            GPIO.output(self.DIR2_PIN, GPIO.LOW)
-            GPIO.output(self.STEP1_PIN, GPIO.HIGH)
-            GPIO.output(self.STEP2_PIN, GPIO.HIGH)
-            sleep(self.STEP_DELAY)
-            GPIO.output(self.STEP1_PIN, GPIO.LOW)
-            GPIO.output(self.STEP2_PIN, GPIO.LOW)
-            if elapsed >= self.PUMP_DURATION:
+        elif ph == 5:
+            if elapsed < self.MOTOR_STOP_DURATION:
+            	self._motor_mode = 'UP'
+            else:
+                self._motor_mode = None
+                self._auto_phase  = (ph+1) % self.AUTO_PHASES
+                self._phase_start = now
+        elif ph == 2:
+            if elapsed < self.MOTOR_STOP_DURATION:
+            	self._motor_mode = 'DOWN'
+            else:
+                self._motor_mode = None
                 self._auto_phase  = (ph+1) % self.AUTO_PHASES
                 self._phase_start = now
                 
     def step_timer(self):
-        if self._auto_active:
+        if self._auto_active and self._auto_phase not in (2, 5):
             return
         mode = self._motor_mode
+        if self._auto_active and self._auto_phase == 5:
+            mode = 'UP'
+        if self._auto_active and self._auto_phase == 2:
+            mode = 'DOWN'
         if not mode:
             return
         # set directions
