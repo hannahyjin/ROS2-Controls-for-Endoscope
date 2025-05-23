@@ -42,7 +42,7 @@ class CombinedControlNode(Node):
             'B': 27,  # rear deflate pump
         }
         self.SOL_DELAY     = 0.5  # seconds before pump on
-        self.PUMP_DURATION = 5.0  # seconds max hold
+        self.PUMP_DURATION = 6.0  # seconds max hold
 
         # ── JOYSTICK MAPPING ───────────────────────
         self.LB_BUTTON  = 4   # motor1 CW / motor2 CCW
