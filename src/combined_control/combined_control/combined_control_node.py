@@ -149,12 +149,12 @@ class CombinedControlNode(Node):
                     self._pump_key = None
                     self._pump_time = 0
     
-    # 0 = inflate front
-    # 1 = deflate back
+    # 0 = anchor proxy (inflation)
+    # 1 = release distal (deflation)
     # 2 = move motors forwards
-    # 3 = inflate back
-    # 4 = deflate front
-    # 5 = move forwards
+    # 3 = anchor distal (inflation)
+    # 4 = release proxy (deflation)
+    # 5 = move motors forwards
     # and repeat            
     def auto_cycle(self):
         if not self._auto_active:
@@ -194,7 +194,7 @@ class CombinedControlNode(Node):
             sleep(self.STEP_DELAY)
             GPIO.output(self.STEP1_PIN, GPIO.LOW)
             GPIO.output(self.STEP2_PIN, GPIO.LOW)
-            if elapsed >= self.MOVE_DURATION:
+            if elapsed >= self.PUMP_DURATION:
                 self._auto_phase  = (ph+1) % self.AUTO_PHASES
                 self._phase_start = now
                 
