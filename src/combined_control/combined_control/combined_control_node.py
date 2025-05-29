@@ -14,7 +14,7 @@ class CombinedControlNode(Node):
         self.STEP1_PIN   = 21  # Motor 1 Step
         self.DIR2_PIN    = 10  # Motor 2 Dir
         self.STEP2_PIN   = 11  # Motor 2 Step
-        self.MOTOR_STOP_DURATION = 1.0  # seconds max hold
+        self.MOTOR_STOP_DURATION = 1.0  # seconds max hold for motor spinning at one time ( * 3 for when holding down)
         self.STEP_DELAY   = 0.001      # step pulse length
         
         # ── AUTONOMOUS CYCLE CONFIG ─────────────────
@@ -123,7 +123,7 @@ class CombinedControlNode(Node):
                 else:
                     # held too long?
                     if self._motor_btn == btn and not self._motor_disabled:
-                        if now - self._motor_time >= self.MOTOR_STOP_DURATION*3:
+                        if now - self._motor_time >= self.MOTOR_STOP_DURATION*3: # change if want to make motors go for longer when pressing
                             self.get_logger().warn('Motor disabled until release')
                             self._motor_disabled = True
                             self._motor_mode = None
