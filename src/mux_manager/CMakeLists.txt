@@ -11,9 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
-include_directories(
-    include
-)
+include_directories(include)
 
 add_library(${PROJECT_NAME} SHARED
     src/Mux_Manager.cpp
@@ -28,18 +26,20 @@ ament_target_dependencies(${PROJECT_NAME}
     rclcpp
 )
 
-ament_export_include_directories(include)
-ament_export_libraries(${PROJECT_NAME})
-ament_export_dependencies(rclcpp)
-
-install(TARGETS
-    ${PROJECT_NAME}
-    DESTINATION lib
+install(TARGETS ${PROJECT_NAME}
+    EXPORT export_${PROJECT_NAME}
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+    RUNTIME DESTINATION lib
 )
 
 install(DIRECTORY include/
     DESTINATION include/${PROJECT_NAME}
 )
+
+ament_export_include_directories(include)
+ament_export_libraries(${PROJECT_NAME})
+ament_export_dependencies(rclcpp)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
