@@ -51,8 +51,17 @@ rosidl_target_interfaces(mprls_node
     ${PROJECT_NAME} "rosidl_typesupport_cpp"
 )
 
-install(TARGETS 
+set_target_properties(mprls_node PROPERTIES
+    BUILD_WITH_INSTALL_RPATH TRUE
+    INSTALL_RPATH "$ORIGIN/../lib"
+)
+
+install(TARGETS
     sensor_drivers
+    DESTINATION lib
+)
+
+install(TARGETS 
     mprls_node
     DESTINATION lib/${PROJECT_NAME}
 )

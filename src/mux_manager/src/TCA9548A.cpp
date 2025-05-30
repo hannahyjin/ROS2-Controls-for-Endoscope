@@ -37,22 +37,25 @@ int TCA9548A::init(int bus_id, uint8_t address){
     return 0;
 }
 
-void TCA9548A::set_channel(uint8_t channel) {
+bool TCA9548A::set_channel(uint8_t channel) {
     if (fd < 0) {
         std::cerr << "i2c device not initialized" << "\n";
-        return;
+        return false;
     }
 
     if (channel > 7) {
         std::cerr << "invalid channel selected: " <<  static_cast<int>(channel) << "\n";
-        return;
+        return false;
     }
 
     uint8_t data = 1 << channel;
 
     if (write(fd, &data, 1) != 1) {
         perror("failed to write channel byte");
+        return false;
     }
+
+    return true;
 }
 
 void TCA9548A::no_channel() {

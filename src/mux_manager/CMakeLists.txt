@@ -10,36 +10,30 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+    "srv/SetInt32.srv"
+)
 
 include_directories(include)
 
-add_library(${PROJECT_NAME} SHARED
-    src/Mux_Manager.cpp
+add_executable(mux_service_node 
+    src/Mux_Service.cpp
     src/TCA9548A.cpp
 )
 
-target_include_directories(${PROJECT_NAME} PUBLIC
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-)
-
-ament_target_dependencies(${PROJECT_NAME}
+ament_target_dependencies(mux_service_node
     rclcpp
 )
 
-install(TARGETS ${PROJECT_NAME}
-    EXPORT export_${PROJECT_NAME}
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib
-    RUNTIME DESTINATION lib
-)
+rosidl_target_interfaces(mux_service_node
+    ${PROJECT_NAME} "rosidl_typesupport_cpp")
 
-install(DIRECTORY include/
-    DESTINATION include/${PROJECT_NAME}
+install(TARGETS
+    mux_service_node 
+    RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
-
-ament_export_include_directories(include)
-ament_export_libraries(${PROJECT_NAME})
-ament_export_dependencies(rclcpp)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
