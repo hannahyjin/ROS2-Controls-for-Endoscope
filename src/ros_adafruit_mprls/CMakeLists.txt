@@ -29,8 +29,8 @@ target_include_directories(sensor_drivers PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 )
 
-target_link_libraries(sensor_drivers i2c
-    i2c
+target_link_libraries(sensor_drivers 
+  i2c
 )
 
 ament_target_dependencies(sensor_drivers
@@ -38,33 +38,32 @@ ament_target_dependencies(sensor_drivers
     mux_manager
 )
 
-install(TARGETS sensor_drivers
-    DESTINATION lib/${PROJECT_NAME}
-)
-
 add_executable(mprls_node src/mprls_publisher.cpp)
 target_link_libraries(mprls_node sensor_drivers)
+
 ament_target_dependencies(mprls_node
     rclcpp
     std_msgs
     mux_manager
 )
 
-set_target_properties(mprls_node PROPERTIES
-    BUILD_WITH_INSTALL_RPATH TRUE
-    INSTALL_RPATH "$ORIGIN/../lib"
-)
-
 rosidl_target_interfaces(mprls_node
     ${PROJECT_NAME} "rosidl_typesupport_cpp"
 )
 
-install(TARGETS mprls_node
+install(TARGETS 
+    sensor_drivers
+    mprls_node
     DESTINATION lib/${PROJECT_NAME}
 )
 
-install(DIRECTORY include/ DESTINATION include)
-install(DIRECTORY msg/ DESTINATION share/${PROJECT_NAME}/msg)
+install(DIRECTORY include/ 
+    DESTINATION include
+)
+
+install(DIRECTORY msg/ 
+    DESTINATION share/${PROJECT_NAME}/msg
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
