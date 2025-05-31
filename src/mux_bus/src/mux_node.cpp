@@ -8,6 +8,8 @@
 
 #include "mux_bus/adafruit_mprls/Adafruit_MPRLS.hpp"
 
+#include "mux_bus/msg/mprls_pressures.hpp"
+
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/imu.hpp>
 #include <sensor_msgs/msg/magnetic_field.hpp>
@@ -35,17 +37,21 @@ public:
     bool onSrvReset(const std::shared_ptr<std_srvs::srv::Trigger::Request> req,
                     std::shared_ptr<std_srvs::srv::Trigger::Response> res);
 private:
-    std::unique_ptr<mux_bus::BNO055I2CDriver> imu;
+    std::unique_ptr<imu_bno055::BNO055I2CDriver> imu;
 
     std::string param_device;
     int param_address;
     double param_rate;
     std::string param_frame_id;
-    
+
+    TCA9548A mux_;   
     Mux_Manager mux_manager_;
-    int param_channel;
+    std::unique_ptr<MPRLS> mprls_sensor1_;
+    std::unique_ptr<MPRLS> mprls_sensor2_;
 
     diagnostic_msgs::msg::DiagnosticStatus current_status;
+
+    rclcpp::Publisher<mux_bus::msg::MPRLSPressures>::SharedPtr pub_mprls;
 
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr pub_data;
     rclcpp::Publisher<sensor_msgs::msg::Imu>::SharedPtr pub_raw;
@@ -53,6 +59,7 @@ private:
     rclcpp::Publisher<sensor_msgs::msg::MagneticField>::SharedPtr pub_mag;
     rclcpp::Publisher<sensor_msgs::msg::Temperature>::SharedPtr pub_temp;
     rclcpp::Publisher<diagnostic_msgs::msg::DiagnosticStatus>::SharedPtr pub_status;
+    
     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr srv_reset;
 
     std::unique_ptr<rclcpp::Rate> rate;
@@ -68,19 +75,55 @@ private:
 };
 
 MuxBusNode::MuxBusNode()
-    : Node("bno055_node"), mux_manager_() {  // Initialize rate here
-    
+    : Node("mux_node"), 
+      mux_(),
+      mux_manager_(),
+      mprls_sensor1_(),
+      mprls_sensor2_() 
+{   
+    //
+    // handle mux declarations and initialization
+    // 
+
+    if(mux_.init(1) == -1) {
+        RCLCPP_ERROR(this->get_logger(), "Failed to initialize the Multiplexer.");
+        throw std::runtime_error("Mux Initialization Failed.");
+    }
+
+    //
+    // mprls declarations
+    //
+
+    mprls_sensor1_ = std::make_unique<MPRLS>(1);
+    mprls_sensor2_ = std::make_unique<MPRLS>(1);
+
+    mux_manager_.selectChannel(0);
+    if(!mprls_sensor1_->begin()) {
+        RCLCPP_ERROR(this->get_logger(), "MPRLS 1 initialization failed.");
+        throw std::runtime_error("MPRLS 1 initialization failed.");
+    }
+
+    mux_manager_.selectChannel(1);
+    if(!mprls_sensor2_->begin()) {
+        RCLCPP_ERROR(this->get_logger(), "MPRLS 1 initialization failed.");
+        throw std::runtime_error("MPRLS 1 initialization failed.");
+    }
+
+    pub_mprls = this->create_publisher<mux_bus::msg::MPRLSPressures>("mprls_pressures", 10);
+
+    //
+    // imu declarations
+    //
+
     this->declare_parameter<std::string>("device", "/dev/i2c-1");
     this->declare_parameter<int>("address", BNO055_ADDRESS_A);
     this->declare_parameter<std::string>("frame_id", "imu");
     this->declare_parameter<double>("rate", 100.0);
-    this->declare_parameter<int>("mux_channel", 2);
 
     this->get_parameter("device", param_device);
     this->get_parameter("address", param_address);
     this->get_parameter("frame_id", param_frame_id);
     this->get_parameter("rate", param_rate);
-    this->get_parameter("mux_channel", param_channel);
     
     mux_manager_.selectChannel(2);
 
@@ -88,15 +131,13 @@ MuxBusNode::MuxBusNode()
 
     imu->init();
 
-    mux_manager_.selectChannel(2);
-
     pub_data = this->create_publisher<sensor_msgs::msg::Imu>("data", 10);
     pub_raw = this->create_publisher<sensor_msgs::msg::Imu>("raw", 10);
     pub_mag = this->create_publisher<sensor_msgs::msg::MagneticField>("mag", 10);
     pub_temp = this->create_publisher<sensor_msgs::msg::Temperature>("temp", 10);
     pub_status = this->create_publisher<diagnostic_msgs::msg::DiagnosticStatus>("status", 10);
     pub_rpy = this->create_publisher<geometry_msgs::msg::Vector3Stamped>("rpy", 10);
-    srv_reset = this->create_service<std_srvs::srv::Trigger>("reset", std::bind(&BNO055I2CNode::onSrvReset, this, std::placeholders::_1, std::placeholders::_2));
+    srv_reset = this->create_service<std_srvs::srv::Trigger>("reset", std::bind(&MuxBusNode::onSrvReset, this, std::placeholders::_1, std::placeholders::_2));
 
     seq = 0;
 
@@ -145,7 +186,7 @@ MuxBusNode::MuxBusNode()
 void MuxBusNode::run() {
     while (rclcpp::ok()) {
         rate->sleep();
-        if (readAndPublish()) {
+        if (imu_readAndPublish() || mprls_readAndPublish()) {
             watchdog.refresh();
         }
     }
@@ -153,14 +194,20 @@ void MuxBusNode::run() {
 
 bool MuxBusNode::mprls_readAndPublish() {
     mux_manager_.selectChannel(0);
-    float pressure1 = sensor1_->readPressure();
+    float pressure1 = mprls_sensor1_->readPressure();
 
     mux_manager_.selectChannel(1);
-    float pressure2 = sensor2_->readPressure();
+    float pressure2 = mprls_sensor2_->readPressure();
 
     auto msg = mux_bus::msg::MPRLSPressures();
 
     msg.pressure_sensor_1 = pressure1;
+    msg.pressure_sensor_2 = pressure2;
+
+    pub_mprls->publish(msg);
+
+    RCLCPP_INFO(this->get_logger(), "Published pressures: Sensor1=%.2f hPa, Sensor2=%.2f hPa", pressure1, pressure2);
+    return true;
 }
 
 bool MuxBusNode::imu_readAndPublish() {
@@ -267,8 +314,9 @@ bool MuxBusNode::imu_readAndPublish() {
     return true;
 }
 
-void BNO055I2CNode::stop() {
+void MuxBusNode::stop() {
     RCLCPP_INFO(this->get_logger(), "Stopping");
+    pub_mprls.reset();
     pub_data.reset();
     pub_raw.reset();
     pub_mag.reset();
@@ -278,7 +326,7 @@ void BNO055I2CNode::stop() {
     srv_reset.reset();
 }
 
-bool BNO055I2CNode::onSrvReset(const std::shared_ptr<std_srvs::srv::Trigger::Request> req,
+bool MuxBusNode::onSrvReset(const std::shared_ptr<std_srvs::srv::Trigger::Request> req,
                                std::shared_ptr<std_srvs::srv::Trigger::Response> res) {
     if(!(imu->reset())) {
         throw std::runtime_error("chip reset failed");
@@ -291,7 +339,7 @@ bool BNO055I2CNode::onSrvReset(const std::shared_ptr<std_srvs::srv::Trigger::Req
 
 int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
-    auto node = std::make_shared<BNO055I2CNode>();
+    auto node = std::make_shared<MuxBusNode>();
     node->run();
     rclcpp::shutdown();
     return 0;

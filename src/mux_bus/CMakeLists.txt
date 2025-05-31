@@ -19,6 +19,14 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
 
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/MPRLSPressures.msg"
+)
+
+ament_export_dependencies(rosidl_default_runtime)
+
 include_directories(
    include
    ${rclcpp_INCLUDE_DIRS}
@@ -30,13 +38,16 @@ include_directories(
    ${tf2_geometry_msgs_INCLUDE_DIRS}
 )
 
-add_executable(bno055_i2c_node
+add_executable(mux_node
   src/bno055_i2c_driver.cpp
+  src/Adafruit_MPRLS.cpp
+  src/TCA9548A.cpp
+  src/Mux_Manager.cpp
   src/mux_node.cpp
   src/watchdog.cpp
 )
 
-ament_target_dependencies(bno055_i2c_node
+ament_target_dependencies(mux_node
   rclcpp
   sensor_msgs
   std_msgs
@@ -45,11 +56,13 @@ ament_target_dependencies(bno055_i2c_node
   geometry_msgs
   tf2
   tf2_geometry_msgs
-  mux_manager
 )
 
-install(TARGETS bno055_i2c_node
-  DESTINATION lib/imu_bno055
+rosidl_target_interfaces(mux_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
+install(TARGETS mux_node
+  DESTINATION lib/mux_bus
 )
+install(DIRECTORY msg/ DESTINATION share/mux_bus/msg)
 
 ament_package()

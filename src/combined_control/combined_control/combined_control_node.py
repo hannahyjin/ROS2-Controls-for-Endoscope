@@ -36,7 +36,7 @@ class CombinedControlNode(Node):
         self.SOL_DELAY = 0.5
  
         # ── PRESSURE THRESHOLDS ────────────────────
-        self.MAX_PRESSURE = 1050
+        self.MAX_PRESSURE = 1105
         self.MIN_PRESSURE = 900
         self.pressure_sensor_1 = 0.0  # back balloons
         self.pressure_sensor_2 = 0.0  # front balloons
@@ -44,8 +44,8 @@ class CombinedControlNode(Node):
         # ── JOYSTICK MAPPING ──────────────────────
         self.LB_BUTTON  = 4
         self.RB_BUTTON  = 5
-        self.DPAD_UP    = 13
-        self.DPAD_DOWN  = 14
+        self.DPAD_UP    = 14
+        self.DPAD_DOWN  = 13
         self.BUTTONS = {'A':0,'B':1,'X':2,'Y':3}
  
         # ── GPIO SETUP ─────────────────────────────
