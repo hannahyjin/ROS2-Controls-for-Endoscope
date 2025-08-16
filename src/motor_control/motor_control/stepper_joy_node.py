@@ -61,13 +61,21 @@ class StepperJoyNode(Node):
                 self._press_start_time = self.get_clock().now()
                 self._mode = new_mode
                 if pressed_button == self.LB_BUTTON:
-                    print("Pressed LB")
+                    self.get_logger().info(
+            		f"Pressed LB"
+        	)
                 elif pressed_button == self.RB_BUTTON:
-                    print("Pressed RB")
+                    self.get_logger().info(
+            		f"Pressed RB"
+        	)
                 elif pressed_button == self.DPAD_UP:
-                    print("Pressed DPad Up")
+                    self.get_logger().info(
+            		f"Pressed DPad Up"
+        	)
                 elif pressed_button == self.DPAD_DOWN:
-                    print("Pressed DPad Down")
+                    self.get_logger().info(
+            		f"Pressed DPad Down"
+        	)
             else:
                 # Button is being held
                 elapsed = (self.get_clock().now() - self._press_start_time).nanoseconds * 1e-9
