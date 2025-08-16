@@ -9,110 +9,112 @@ class PumpControlNode(Node):
     def __init__(self):
         super().__init__('pump_control_node')
 
-        # GPIO pin mappings (BCM): solenoid and pump for each action
-        self.SOL_PINS = {  # solenoid valves
-            'Y': 14,  # front inflate solenoid
-            'A': 17,  # front deflate solenoid
-            'X': 22,  # back inflate solenoid
-            'B': 24,  # back deflate solenoid
-        }
-        self.PUMP_PINS = {  # air pumps
-            'Y': 15,  # front inflate pump
-            'A': 18,  # front deflate pump
-            'X': 23,  # back inflate pump
-            'B': 27,  # back deflate pump
+        # GPIO pin mappings for pump control (BCM)
+        self.PINS = {
+            'Y': 14,  # front inflate pin 11
+            'A': 17,  # front deflate pin 13
+            'X': 22,  # rear inflate pin 15
+            'B': 24,  # rear deflate pin 16
         }
         # Controller button indices
         self.BUTTONS = {'A': 0, 'B': 1, 'X': 2, 'Y': 3}
 
-        # Timing parameters
-        self.SOL_DELAY     = 0.5  # seconds before activating pump
-        self.STOP_DURATION = 5.0  # total seconds to hold before auto-stop
+        # Duration pump remains active after press
+        self.STOP_DURATION = 5.0  # seconds
 
         # Setup GPIO
         GPIO.setmode(GPIO.BCM)
-        for pin in list(self.SOL_PINS.values()) + list(self.PUMP_PINS.values()):
+        for pin in self.PINS.values():
             GPIO.setup(pin, GPIO.OUT)
             GPIO.output(pin, GPIO.LOW)
 
-        # State tracking for edge detection
-        self.prev = {k: 0 for k in self.BUTTONS}
+        # State tracking
+        max_idx = max(self.BUTTONS.values())
+        self.prev_buttons = [0] * (max_idx + 1)
         self._pressed_key = None
         self._press_time = 0
 
-        # ROS subscription and control timer
+        # Subscribe to joystick
         self.create_subscription(Joy, 'joy', self.joy_callback, 10)
-        self.create_timer(0.1, self.control_timer)
-
         self.get_logger().info(
-            f"PumpControlNode ready: solenoid→pump sequencing, hold ≤{self.STOP_DURATION}s"
+            "PumpControlNode: edge-triggered, prints once, holds for 2s"
         )
 
     def joy_callback(self, msg: Joy):
         now = time()
         btns = msg.buttons
 
-        # Detect rising edge in defined priority order
+        # Detect new press (edge) among mapped keys in priority order
+        current = None
         for key in ['Y', 'A', 'X', 'B']:
             idx = self.BUTTONS[key]
-            if btns[idx] and not self.prev[key]:
-                self._pressed_key = key
-                self._press_time = now
-                self.get_logger().info(
-                    f"Pressed {key} → {self._action(key)} (solenoid first)"
-                )
+            if btns[idx]:
+                current = key
                 break
-        # Update previous button states and handle release
-        for key, idx in self.BUTTONS.items():
-            if not btns[idx] and self.prev[key] and self._pressed_key == key:
-                # On release, reset
-                self._clear_all()
-                self._pressed_key = None
-                self._press_time = 0
-            self.prev[key] = btns[idx]
 
-    def control_timer(self):
-        if not self._pressed_key:
-            return
-        now = time()
-        elapsed = now - self._press_time
-        key = self._pressed_key
-        sol_pin = self.SOL_PINS[key]
-        pump_pin = self.PUMP_PINS[key]
-        if elapsed < self.SOL_DELAY:
-            # Solenoid only
-            GPIO.output(sol_pin, GPIO.HIGH)
-            GPIO.output(pump_pin, GPIO.LOW)
-        elif elapsed < self.STOP_DURATION:
-            # Solenoid + pump
-            GPIO.output(sol_pin, GPIO.HIGH)
-            GPIO.output(pump_pin, GPIO.HIGH)
-        else:
-            # Timeout: reset all
-            self._clear_all()
+        # Edge detection
+        if current is not None and self.prev_buttons[self.BUTTONS[current]] == 0:
+            # New key down
+            self._pressed_key = current
+            self._press_time = now
+            self.get_logger().info(f"Pressed {current} to {self._action_map(current)}")
+
+        # If button released, clear state
+        if current is None:
             self._pressed_key = None
             self._press_time = 0
+            self._set_all(False)
 
-    def _clear_all(self):
-        # Turn off all solenoids and pumps
-        for pin in self.SOL_PINS.values():
-            GPIO.output(pin, GPIO.LOW)
-        for pin in self.PUMP_PINS.values():
-            GPIO.output(pin, GPIO.LOW)
+        # Handle active pump based on timing
+        
+        #this is modified code because the solenoid valve has to be opened first before the air pump, both of them being opened at the same time closes the solenoid valve and doesn't pump air. May have to seperate the solenoid valve and the air pump on different mosfets to gain control of solenoid valve and allow it to release first before the air pump
+ #       if self._pressed_key:
+      #      elapsed = now - self._press_time
+     #       elapsed_solen = now - self._press_time
+        #    if elapsed < (0.5):
+    #            self._set_gpio(27, True) #this is if the solenoid val is in a different mosfet, connected to this pin
+        #    	if elapsed < self.STOP_DURATION:
+                # Keep that pump on                
+       #            self._set_gpio(self._pressed_key, True)
+     #       else:
+                # Timeout reached: turn off but do not retrigger until release
+     #           self._set_all(False)
 
-    def _action(self, key):
-        names = {
-            'Y': 'front inflate',
-            'A': 'front deflate',
-            'X': 'back inflate',
-            'B': 'back deflate',
-        }
-        return names[key]
+        if self._pressed_key:
+            elapsed = now - self._press_time
+            if elapsed < self.STOP_DURATION:
+                # Keep that pump on
+                self._set_gpio(self._pressed_key, True)
+            else:
+                # Timeout reached: turn off but do not retrigger until release
+                self._set_all(False)
+
+        # Update previous button states
+        for k, idx in self.BUTTONS.items():
+            self.prev_buttons[idx] = btns[idx]
+
+    def _set_gpio(self, key, state):
+        # Turn only that key's pin HIGH, others LOW
+        for k, pin in self.PINS.items():
+            GPIO.output(pin, GPIO.HIGH if (k == key and state) else GPIO.LOW)
+
+    def _set_all(self, state):
+        level = GPIO.HIGH if state else GPIO.LOW
+        for pin in self.PINS.values():
+            GPIO.output(pin, level)
+
+    def _action_map(self, key):
+        return {
+            'Y': 'inflate front pump',
+            'A': 'deflate front pump',
+            'X': 'inflate back pump',
+            'B': 'deflate back pump',
+        }[key]
 
     def destroy_node(self):
-        GPIO.cleanup()
-        self.get_logger().info('GPIO cleaned up')
         super().destroy_node()
+        GPIO.cleanup()
+        self.get_logger().info("GPIO cleaned up")
 
 
 def main(args=None):
