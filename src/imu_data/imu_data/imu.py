@@ -16,6 +16,7 @@ class IMUDataNode(Node):
         self.get_logger().info('IMUDataNode initialized, logging Euler angles at 1 Hz')
 
     def imu_callback(self, msg: Imu):
+        print("got here")
         now = time.time()
         # only output once per second
         if now - self._last_time < 1.0:
